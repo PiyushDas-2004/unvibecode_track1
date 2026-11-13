@@ -1,0 +1,224 @@
+id,lens,problem_or_trigger,evidence,affected_persona,severity,how_common,type,pass_added,linked_ids
+P001,1 access,"Long command with required --repository; no current-dir default, so it must be retyped or looked up",research/friction_log.md#F16,all,M,every run,problem,1,
+P002,1 access,Client ignores HTTPS_PROXY (ProxyHandler({})); corporate proxy users likely blocked,research/friction_log.md#F18 (hypothesis for corporate),enterprise dev,H,common in enterprises,problem,1,
+P003,1 access,Python 3.11+ required; many machines default to older Python,research/upstream_audit.md (README),"students, enterprise",M,common,problem,1,
+P004,1 access,No pipx/uv/brew/npx entry documented; pip into global env pollutes,hypothesis,JS/Go devs,L,occasional,problem,1,
+P005,1 access,No Docker image or CI-ready container,research/upstream_audit.md,CI users,L,occasional,problem,1,
+P006,1 access,Hidden --no-open-browser flag; headless/CI discovery fails,research/friction_log.md#F02,"CI, SSH users",M,common in CI,problem,1,
+P007,1 access,Network required for every run; no offline path,evidence/README.md#3,"travel, secure envs",M,common,problem,1,
+P008,1 access,Upload of private source needs employer permission,research/friction_log.md#F17,team devs on private repos,H,very common,problem,1,
+P009,1 access,Public preview has 2 analysis slots; busy server errors (#689),research/upstream_audit.md#6,all at peak,M,occasional,problem,1,
+P010,2 first-run,"Headline outputs (Business Workflow Map, Risk Findings) failed: API credits exhausted",evidence/README.md#3,all,H,entire trial,problem,1,
+P011,2 first-run,Three different file counts (dry-run/CLI/manifest) confuse users,research/friction_log.md#F03,all,L,every run,problem,1,
+P012,2 first-run,Exit code 1 on partial success breaks scripts,research/friction_log.md#F05,"CI, scripting",M,every partial run,problem,1,
+P013,2 first-run,Java repos get 0 connections and no clear 'unsupported' message,evidence/README.md#5,Java devs,H,all Java repos tested,problem,1,
+P014,2 first-run,TS relative imports mostly unresolved (2/49),evidence/README.md#5,TS devs,H,TS repo tested,problem,1,
+P015,2 first-run,First file in picker is a wrongly connected fixture; first click shows a wrong result,research/friction_log.md#F08,Python devs,H,Flask,problem,1,
+P016,2 first-run,"First 60s value is a progress dashboard, not an answer",evidence/README.md#6,all,M,every run,problem,1,
+P017,3 output,Primary output is a browser hairball graph; no terminal answer,research/friction_log.md#F07,all,H,every run,problem,1,
+P018,3 output,"No Markdown/text summary to paste into PRs, tickets, Slack",evidence/README.md#2,team devs,M,weekly need,problem,1,
+P019,3 output,Report is local file:// HTML; cannot link a teammate to it,evidence/README.md#2,teams,M,weekly need,problem,1,
+P020,3 output,"Sharing needs job ID, which is a bearer token (unsafe to share)",research/upstream_audit.md#6,teams,M,occasional,problem,1,
+P021,3 output,Internal 'ShipReady' naming in the reusable ZIP README dilutes brand,research/friction_log.md#F20,all,L,every bundle,problem,1,
+P022,3 output,Context ZIP is great for machines but undocumented as an API/format contract,evidence/README.md#2,tool builders,M,occasional,problem,1,
+P023,3 output,Large repos: graph unreadable (#450),research/upstream_audit.md#4,large-repo devs,M,common,problem,1,
+P024,4 state,No memory between runs; each run is a new timestamped folder,research/friction_log.md#F11,all,H,every repeat run,problem,1,
+P025,4 state,Byte-identical re-run but user cannot tell nothing changed,research/friction_log.md#F13,all,M,every repeat run,problem,1,
+P026,4 state,No diff between revisions; manual worktrees + scripts needed,research/friction_log.md#F14,all,H,weekly need,problem,1,
+P027,4 state,Chunk IDs shift with line numbers; naive diffs noisy,research/friction_log.md#F15,tool builders,M,every diff,problem,1,
+P028,4 state,Results retained ~24h server-side then gone; history not kept,research/upstream_audit.md#6,all,M,always,problem,1,
+P029,4 state,Default output lands inside the repo as untracked folder,research/friction_log.md#F12,all,M,every in-repo run,problem,1,
+P030,4 state,Every re-run re-uploads whole repo even if nothing changed,research/friction_log.md#F11,all,M,every repeat run,problem,1,
+T031,5 moment,Starting a ticket: 'where does this behaviour live?',hypothesis,team dev,M,daily,trigger,1,
+T032,5 moment,Reading a new codebase (the current core moment),research/upstream_audit.md,"OSS contributor, new hire",M,once per repo,trigger,1,
+T033,5 moment,Onboarding day 1-30 on a team repo,hypothesis,new hire,H,per hire,trigger,1,
+T034,5 moment,Authoring a PR: describe what my change touches,hypothesis,PR author,M,several/week,trigger,1,
+T035,5 moment,Reviewing someone else's PR: what does this change connect to?,hypothesis,reviewer,H,several/week,trigger,1,
+T036,5 moment,Debugging a stack trace across files,hypothesis,all,M,weekly,trigger,1,
+T037,5 moment,Dependency upgrade: which of our files import the upgraded package?,evidence/README.md unresolved_relationships list external modules per file,all,M,weekly-monthly,trigger,1,
+T038,5 moment,Refactor: blast radius of renaming/moving a module,evidence/README.md#4 (c2705ff refactor),all,M,monthly,trigger,1,
+T039,5 moment,Release notes: what structurally changed this release,hypothesis,maintainers,L,per release,trigger,1,
+T040,5 moment,Handoff when a dev leaves / switches team,hypothesis,leads,M,quarterly,trigger,1,
+T041,5 moment,Interview take-home review,hypothesis,interviewers,L,occasional,trigger,1,
+T042,5 moment,First OSS contribution: find the right files for a good-first-issue,hypothesis,OSS newcomers,M,occasional,trigger,1,
+T043,5 moment,Vendor/third-party library audit before adoption,hypothesis,leads,L,occasional,trigger,1,
+T044,5 moment,Security/compliance review: where are secrets/auth/payment flows,research/upstream_audit.md (risk findings pitch),security,M,quarterly,trigger,1,
+T045,5 moment,Doc upkeep: architecture docs drift from code,hypothesis,"leads, maintainers",M,continuous,trigger,1,
+T046,5 moment,After `git pull`: teammates' merges made my area unfamiliar again,evidence/README.md#4 (structure changes over commits),team dev,H,daily,trigger,1,
+T047,5 moment,After an AI assistant writes a large change: what did it touch?,research/upstream_audit.md#5 (README AI pitch),AI-assisted dev,H,daily for many,trigger,1,
+T048,5 moment,Incident: which code paths connect to the failing service,hypothesis,on-call,M,monthly,trigger,1,
+T049,5 moment,Sprint planning: estimate risk of touching area X,hypothesis,leads,L,biweekly,trigger,1,
+T050,6 surface,Terminal / shell prompt,hypothesis,all,M,constant,trigger,1,
+T051,6 surface,"git hooks (pre-commit, post-merge, post-checkout, pre-push)",hypothesis,all,M,daily,trigger,1,
+T052,6 surface,git aliases (git unvibe),hypothesis,power users,L,daily,trigger,1,
+T053,6 surface,"GitHub PR: comments, checks, Files-changed tab, description",hypothesis,teams,H,several/week,trigger,1,
+T054,6 surface,GitHub README / badges,research/upstream_audit.md#5,OSS,L,per visit,trigger,1,
+T055,6 surface,GitHub Actions / CI logs,hypothesis,teams,M,per push,trigger,1,
+T056,6 surface,"Committed files in repo root (like CODEOWNERS, lockfiles)",hypothesis,teams,H,every clone/PR,trigger,1,
+T057,6 surface,"IDE (VS Code, JetBrains, Neovim)",hypothesis,all,H,constant,trigger,1,
+T058,6 surface,Slack/Teams/Discord,hypothesis,teams,M,daily,trigger,1,
+T059,6 surface,Browser on github.com (extension),hypothesis,reviewers,M,daily,trigger,1,
+T060,6 surface,pre-commit framework config,hypothesis,Python teams,M,daily,trigger,1,
+T061,6 surface,Makefile/just/package.json scripts,hypothesis,all,L,daily,trigger,1,
+T062,6 surface,Dev containers / Codespaces,hypothesis,teams,L,occasional,trigger,1,
+T063,6 surface,Onboarding docs / CONTRIBUTING.md,hypothesis,"OSS, teams",M,per newcomer,trigger,1,
+T064,6 surface,AI assistant prompt (pasted context),evidence/README.md#2 (selections),AI-assisted dev,M,daily,trigger,1,
+P065,7 team,Single-player: nobody but the runner sees the output,evidence/README.md#6,teams,H,always,problem,1,
+P066,7 team,"No team ritual uses it (review, standup, retro)",hypothesis,teams,H,always,problem,1,
+P067,7 team,Leads get no value without running it themselves,hypothesis,leads,M,always,problem,1,
+P068,7 team,No viral surface: output never reaches a non-user,evidence/README.md#6,teams,H,always,problem,1,
+P069,8 habit,No external trigger (Hook model: trigger missing),research/friction_log.md#day-2 summary,all,H,always,problem,1,
+P070,8 habit,"Reward is fixed (same graph each time), not variable",research/friction_log.md#F13,all,M,always,problem,1,
+P071,8 habit,No investment: nothing the user builds up makes the next run better,research/friction_log.md#F11,all,H,always,problem,1,
+P072,8 habit,Action cost high: 15-25 s wait plus browser context switch,evidence/README.md#3,all,M,every run,problem,1,
+P073,9 brand,Brand lives in a closed browser tab; zero ambient presence,evidence/README.md#6,all,H,always,problem,1,
+P074,9 brand,MCP use would hide the name entirely (challenge brief),evidence/README.md challenge_doc,AI users,H,n/a,problem,1,
+P075,9 brand,"No artifact carries the name into repos, PRs, or chats",evidence/README.md#6,teams,H,always,problem,1,
+P076,10 trust,Systematic false edges (module shadowing) undermine trust,evidence/README.md#5,Python devs,H,Flask,problem,1,
+P077,10 trust,Wrong edges are invisible/unreported inside a graph,evidence/README.md#5,all,M,always,problem,1,
+P078,10 trust,"LLM workflow sets non-deterministic across runs (#408,#516,#251)",research/upstream_audit.md#4,all,H,reported repeatedly,problem,1,
+P079,10 trust,"Line numbers in edges point to chunk start, not the call/def line",evidence/README.md#5,all,L,common,problem,1,
+P080,10 trust,No confidence shown to user for each relationship (all 'high'),evidence/README.md#5 (all 86 microservices edges 'high'),all,M,always,problem,1,
+P081,11 cost,LLM stage costs money per run; running it per commit is unaffordable,evidence/README.md#3,vendor,H,always,problem,1,
+P082,11 cost,"2 analysis slots: per-commit usage by 1,000 users would queue",research/upstream_audit.md#6,vendor,H,at scale,problem,1,
+P083,11 privacy,24h retention + bearer job IDs complicate enterprise approval,research/upstream_audit.md#6,enterprise,H,enterprise,problem,1,
+P084,11 perf,Large repos >2M tokens skip business review,research/upstream_audit.md#2,monorepos,M,large repos,problem,1,
+P085,12 measure,No usage telemetry or opt-in counters in the client,evidence/README.md#2,vendor,M,always,problem,1,
+P086,12 measure,"No public signal of retained adoption (no committed file, badge)",research/upstream_audit.md#5,vendor,M,always,problem,1,
+P087,12 measure,Cannot tell automated vs manual runs apart (no client metadata),evidence/README.md#2,vendor,L,always,problem,1,
+P088,12 measure,"GitHub traffic archive exists but measures views, not use (#398)",research/upstream_audit.md#4,vendor,L,always,problem,1,
+S001,solution:PR,GitHub Action posts PR comment with connected files of changed files (hosted run per PR),see pass_01.md,per linked problem,n/a,per PR,solution,1,T035
+S002,solution:git/PR,Committed map file: PR's Files-changed tab shows map diff (new/removed cross-file connections) with no bot comment,see pass_01.md,per linked problem,n/a,per structural PR,solution,1,T035
+S003,solution:browser,Browser extension overlays 'used by N files' on GitHub diff view,see pass_01.md,per linked problem,n/a,per PR,solution,1,T035
+S004,solution:terminal,Reviewer CLI `unvibe review-pr 123` printing connected files of a PR locally,see pass_01.md,per linked problem,n/a,per PR,solution,1,T035
+S005,solution:PR template,PR template checkbox 'Unvibe impact pasted' with a local command that generates the block,see pass_01.md,per linked problem,n/a,per PR,solution,1,T035
+S006,solution:git hook,post-merge hook prints 'since your last pull: N new connections into files you touched',see pass_01.md,per linked problem,n/a,daily,solution,1,T046
+S007,solution:git,`git log -p UNVIBECODE map file` shows structural history; post-merge prints the map diff,see pass_01.md,per linked problem,n/a,daily,solution,1,T046
+S008,solution:shell,Morning terminal banner on first shell open: structural changes overnight,see pass_01.md,per linked problem,n/a,daily,solution,1,T046
+S009,solution:Slack,Weekly Slack post of structural changes per area,see pass_01.md,per linked problem,n/a,weekly,solution,1,T046
+S010,solution:IDE,IDE gutter marker on files whose dependents changed since last open,see pass_01.md,per linked problem,n/a,daily,solution,1,T046
+S011,solution:terminal,`unvibe impact` on uncommitted working tree after an AI session: dependents of changed files from cached map,see pass_01.md,per linked problem,n/a,daily,solution,1,T047
+S012,solution:agent hook,"Claude Code/Cursor post-edit hook that prints UnvibeCode impact block in the assistant transcript (visible, branded)",see pass_01.md,per linked problem,n/a,daily,solution,1,T047
+S013,solution:terminal,Re-run hosted review after every AI session and diff,see pass_01.md,per linked problem,n/a,daily,solution,1,T047
+S014,solution:git trailer,'Vibe receipt' Markdown appended to commit message trailer: `Unvibe-Impact: 3 files depend on changed symbols`,see pass_01.md,per linked problem,n/a,per commit,solution,1,T047
+S015,solution:CI,AI-change guard in CI: flag PRs that add new cross-area connections,see pass_01.md,per linked problem,n/a,per PR,solution,1,T047
+S016,solution:terminal->PR,`unvibe pr-notes` writes a Markdown impact block for the PR description with UnvibeCode attribution,see pass_01.md,per linked problem,n/a,per PR,solution,1,T034
+S017,solution:CI,GitHub PR description auto-filled by an Action,see pass_01.md,per linked problem,n/a,per PR,solution,1,T034
+S018,solution:git,Commit-msg trailer listing touched connected areas,see pass_01.md,per linked problem,n/a,per commit,solution,1,T034
+S019,solution:IDE,VS Code command 'Copy Unvibe impact',see pass_01.md,per linked problem,n/a,per PR,solution,1,T034
+S020,solution:git,Map-file diff included automatically because author regenerates map file before push,see pass_01.md,per linked problem,n/a,per structural PR,solution,1,T034
+S021,solution:repo file,Committed human-readable map (UNVIBECODE.md) rendered on GitHub as the 'architecture page' every new hire opens,see pass_01.md,per linked problem,n/a,per hire + weekly,solution,1,T033
+S022,solution:terminal,Guided 5-day onboarding tour generated from the map (one area per day),see pass_01.md,per linked problem,n/a,daily for 1 week,solution,1,T033
+S023,solution:repo docs,CONTRIBUTING.md section auto-generated with hub files and entry points,see pass_01.md,per linked problem,n/a,per newcomer,solution,1,T033
+S024,solution:terminal,Codebase flashcards / spaced repetition quiz,see pass_01.md,per linked problem,n/a,daily,solution,1,T033
+S025,solution:Slack,Onboarding buddy Slack bot answering 'who uses X',see pass_01.md,per linked problem,n/a,daily,solution,1,T033
+S026,solution:terminal,`unvibe trace` maps stack frames to connected code and bundles context for an AI assistant,see pass_01.md,per linked problem,n/a,weekly,solution,1,T036
+S027,solution:IDE,IDE 'open connected files' on exception,see pass_01.md,per linked problem,n/a,weekly,solution,1,T036
+S028,solution:observability,Sentry/log integration linking errors to code-map areas,see pass_01.md,per linked problem,n/a,weekly,solution,1,T036
+S029,solution:test runner,"pytest plugin: on failure, print files connected to the failing test's imports",see pass_01.md,per linked problem,n/a,daily,solution,1,T036
+S030,solution:browser,Browser extension on CI logs,see pass_01.md,per linked problem,n/a,weekly,solution,1,T036
+S031,solution:terminal,`unvibe where 'refund'` search over workflow names and symbols (LLM-backed),see pass_01.md,per linked problem,n/a,daily,solution,1,T031
+S032,solution:Jira,Ticket bot comments likely files on new Jira tickets,see pass_01.md,per linked problem,n/a,daily,solution,1,T031
+S033,solution:git hook,Branch-name hook: on `git checkout -b feature/refund-*` print the relevant area,see pass_01.md,per linked problem,n/a,per ticket,solution,1,T031
+S034,solution:terminal,Context pack per ticket for AI assistant,see pass_01.md,per linked problem,n/a,per ticket,solution,1,T031
+S035,solution:IDE,IDE command palette 'UnvibeCode: where does X live',see pass_01.md,per linked problem,n/a,daily,solution,1,T031
+S036,solution:CI + repo file,Committed map file with CI freshness check (lockfile-style `--check`) so docs never drift,see pass_01.md,per linked problem,n/a,per PR,solution,1,T045
+S037,solution:scheduled CI,Scheduled weekly bot PR updating architecture doc (Dependabot cadence),see pass_01.md,per linked problem,n/a,weekly,solution,1,T045
+S038,solution:repo docs,"Docs-as-code snippets pinned to symbols, flagged stale on change (Swimm-like)",see pass_01.md,per linked problem,n/a,per PR,solution,1,T045
+S039,solution:wiki,Wiki page sync,see pass_01.md,per linked problem,n/a,weekly,solution,1,T045
+S040,solution:README,Badge 'map fresh as of <date>',see pass_01.md,per linked problem,n/a,per visit,solution,1,T045
+S041,solution:terminal,`unvibe uses requests` lists all files importing an external package (from unresolved_relationships),see pass_01.md,per linked problem,n/a,per upgrade,solution,1,T037
+S042,solution:CI,Renovate/Dependabot PR enrichment: which files import the upgraded package,see pass_01.md,per linked problem,n/a,per upgrade PR,solution,1,T037
+S043,solution:repo file,Map file section 'external packages used by area',see pass_01.md,per linked problem,n/a,per upgrade,solution,1,T037
+S044,solution:terminal,Upgrade-risk score per package,see pass_01.md,per linked problem,n/a,per upgrade,solution,1,T037
+S045,solution:Slack,Slack alert on major version bumps with affected files,see pass_01.md,per linked problem,n/a,monthly,solution,1,T037
+S046,solution:local cache,Local snapshot store ~/.unvibecode/history per repo+commit,see pass_01.md,per linked problem,n/a,every run,solution,1,P024
+S047,solution:repo file,Commit the snapshot into the repo so git is the history,see pass_01.md,per linked problem,n/a,per PR,solution,1,P024
+S048,solution:hosted,Server-side account history,see pass_01.md,per linked problem,n/a,every run,solution,1,P024
+S049,solution:CLI,Stable output folder name + 'latest' symlink,see pass_01.md,per linked problem,n/a,every run,solution,1,P024
+S050,solution:local,Run ledger file `.unvibecode/runs.jsonl`,see pass_01.md,per linked problem,n/a,every run,solution,1,P024
+S051,solution:CLI,"`unvibecode diff A B` comparing two bundles by (file,symbol) key",see pass_01.md,per linked problem,n/a,weekly,solution,1,P026
+S052,solution:git,git difftool driver for the map file,see pass_01.md,per linked problem,n/a,per diff,solution,1,P026
+S053,solution:hosted,Hosted diff endpoint,see pass_01.md,per linked problem,n/a,weekly,solution,1,P026
+S054,solution:browser,HTML diff view with added/removed edges highlighted,see pass_01.md,per linked problem,n/a,weekly,solution,1,P026
+S055,solution:hosted,Diff only at business-workflow level (LLM),see pass_01.md,per linked problem,n/a,weekly,solution,1,P026
+S056,solution:terminal,Terminal answers: `unvibe who-uses <file|symbol>`,see pass_01.md,per linked problem,n/a,daily,solution,1,P017
+S057,solution:repo file,Markdown summary with hub files and area dependencies,see pass_01.md,per linked problem,n/a,weekly,solution,1,P017
+S058,solution:browser,Focused graph view opened at a specific file via URL hash,see pass_01.md,per linked problem,n/a,daily,solution,1,P017
+S059,solution:terminal,TUI explorer,see pass_01.md,per linked problem,n/a,daily,solution,1,P017
+S060,solution:CLI,JSON output for scripting,see pass_01.md,per linked problem,n/a,daily,solution,1,P017
+S061,solution:repo file,Map file committed so the whole team shares one map,see pass_01.md,per linked problem,n/a,per clone,solution,1,P065
+S062,solution:PR,PR comment visible to reviewers,see pass_01.md,per linked problem,n/a,per PR,solution,1,P065
+S063,solution:Slack,Team Slack channel digest,see pass_01.md,per linked problem,n/a,weekly,solution,1,P065
+S064,solution:hosted,Shared hosted workspace,see pass_01.md,per linked problem,n/a,weekly,solution,1,P065
+S065,solution:terminal,Standup snippet generator,see pass_01.md,per linked problem,n/a,daily,solution,1,P065
+S066,solution:git,"Tie to git events that already happen (pull, push, PR)",see pass_01.md,per linked problem,n/a,daily,solution,1,P069
+S067,solution:email,Calendar reminder / weekly email,see pass_01.md,per linked problem,n/a,weekly,solution,1,P069
+S068,solution:CI,CI freshness check that fails/warns when map is stale,see pass_01.md,per linked problem,n/a,per PR,solution,1,P069
+S069,solution:IDE,IDE status-bar indicator 'map stale',see pass_01.md,per linked problem,n/a,constant,solution,1,P069
+S070,solution:CI,Scheduled bot PR,see pass_01.md,per linked problem,n/a,weekly,solution,1,P069
+S071,solution:git,"Accumulating map history in git: git blame for architecture (`who added this dependency, when`)",see pass_01.md,per linked problem,n/a,per question,solution,1,P071
+S072,solution:repo file,User-curated area names / ownership annotations stored in map config,see pass_01.md,per linked problem,n/a,occasional,solution,1,P071
+S073,solution:repo file,Allow-list of intended cross-area connections (architecture rules) that the map checks,see pass_01.md,per linked problem,n/a,per PR,solution,1,P071
+S074,solution:local,Personal 'my files' watch list,see pass_01.md,per linked problem,n/a,daily,solution,1,P071
+S075,solution:local,Saved questions / bookmarks,see pass_01.md,per linked problem,n/a,weekly,solution,1,P071
+S076,solution:repo file,Brand in a committed file name visible in every repo tree (like yarn.lock),see pass_01.md,per linked problem,n/a,constant,solution,1,P073
+S077,solution:PR,PR description footer 'Impact by UnvibeCode',see pass_01.md,per linked problem,n/a,per PR,solution,1,P073
+S078,solution:terminal,Terminal header on each command,see pass_01.md,per linked problem,n/a,per use,solution,1,P073
+S079,solution:README,README badge,see pass_01.md,per linked problem,n/a,per visit,solution,1,P073
+S080,solution:terminal,Verb 'unvibe' as CLI command name,see pass_01.md,per linked problem,n/a,per use,solution,1,P073
+S081,solution:repo file,Map file lines are reviewable; wrong edges are visible in PR diffs and can be reported,see pass_01.md,per linked problem,n/a,per PR,solution,1,P076
+S082,solution:terminal,`unvibe explain-edge` shows the import line as evidence,see pass_01.md,per linked problem,n/a,occasional,solution,1,P076
+S083,solution:CLI,Confidence labels and 'unresolved' counts per file in output,see pass_01.md,per linked problem,n/a,every run,solution,1,P076
+S084,solution:repo file,Edge override file (`ignore`/`add`) committed by team,see pass_01.md,per linked problem,n/a,occasional,solution,1,P076
+S085,solution:GitHub,One-click 'report wrong edge' issue template prefilled,see pass_01.md,per linked problem,n/a,occasional,solution,1,P076
+S086,solution:CLI,Upload rarely: refresh map only when structure may have changed; answer daily questions locally,see pass_01.md,per linked problem,n/a,daily,solution,1,P008
+S087,solution:CLI,Bring back local fast lane (as in 0.3.x) for the deterministic map,see pass_01.md,per linked problem,n/a,daily,solution,1,P008
+S088,solution:enterprise,Self-hosted engine container,see pass_01.md,per linked problem,n/a,daily,solution,1,P008
+S089,solution:hosted,"Upload only import/symbol skeleton, not full source (hypothesis: engine change)",see pass_01.md,per linked problem,n/a,daily,solution,1,P008
+S090,solution:OSS,Public-repo-first strategy (OSS maintainers),see pass_01.md,per linked problem,n/a,weekly,solution,1,P008
+S091,solution:CLI,"Daily loop uses deterministic lane only; LLM runs on demand, weekly or per release",see pass_01.md,per linked problem,n/a,weekly,solution,1,P081
+S092,solution:hosted,Cache LLM outputs keyed by structural hash; re-run only changed areas,see pass_01.md,per linked problem,n/a,weekly,solution,1,P081
+S093,solution:business,"Paid tier for LLM, free deterministic tier",see pass_01.md,per linked problem,n/a,n/a,solution,1,P081
+S094,solution:CLI,BYO API key,see pass_01.md,per linked problem,n/a,n/a,solution,1,P081
+S095,solution:hosted,Smaller model for diffs,see pass_01.md,per linked problem,n/a,n/a,solution,1,P081
+S096,solution:terminal,`unvibe ctx <file>` prints Optimal connected context with an UnvibeCode header for pasting into AI chat,see pass_01.md,per linked problem,n/a,daily,solution,1,T064
+S097,solution:terminal,Clipboard integration,see pass_01.md,per linked problem,n/a,daily,solution,1,T064
+S098,solution:repo file,"AGENTS.md/CLAUDE.md section generated from map (hub files, do-not-break list)",see pass_01.md,per linked problem,n/a,per agent session,solution,1,T064
+S099,solution:PR,Context pack attached to PR for reviewers' AI,see pass_01.md,per linked problem,n/a,per PR,solution,1,T064
+S100,solution:MCP,MCP tool (invisible),see pass_01.md,per linked problem,n/a,daily,solution,1,T064
+P089,"5 moment (pass2: vacation analogy, 'statement' from banking)",Returning after leave: 'what changed structurally in the 2 weeks I was away?',hypothesis,team dev,M,monthly,problem,2,
+P090,5 moment (pass2: reviewer triage),Reviewer cannot tell a structural PR from a cosmetic one without reading every file,research/competitor_landscape.md (Codecov patch / Sonar new-code focus),reviewer,H,several/week,problem,2,
+P091,7 team (pass2: CODEOWNERS analogy),"CODEOWNERS reflects folders, not real dependency reach; reviewers of dependents are not requested",hypothesis,teams,M,per PR,problem,2,
+P092,5 moment (pass2: test runners),Which tests to run after a change (affected tests),evidence/affected_tests_closure.txt (closure saturates on Flask),all,M,daily,problem,2,
+P093,6 surface (pass2: agents read AGENTS.md each session),AI coding agents start each session with no repo map; they re-discover structure,hypothesis,AI-assisted dev,M,daily,problem,2,
+P094,"10 trust (pass2: architecture erosion, ArchUnit freeze)",Module boundaries erode silently; nobody sees a new cross-area dependency until it hurts,research/competitor_landscape.md (ArchUnit FreezingArchRule),leads,H,continuous,problem,2,
+P095,5 moment (pass2: OSS maintainers in the AI-PR era),Maintainers triaging drive-by / AI-generated PRs need to know which ones reach into core hubs,hypothesis,OSS maintainers,H,daily for popular repos,problem,2,
+P096,4 state (pass2: git as database),Structural history is lost: 'when and in which PR did A start depending on B?',evidence/README.md#4,leads,M,monthly,problem,2,
+P097,11 cost (pass2: data),Uploads on every trigger waste capacity: internal import lines change in only 6-37% of commits,evidence/import_churn.txt,vendor,H,always,problem,2,
+P098,8 habit (pass2: fitness apps vs linters),"Habit tools that report fixed progress get ignored; tools that report only NEW deltas stay relevant (Codecov patch, ArchUnit freeze)",research/competitor_landscape.md,all,M,always,problem,2,
+P099,9 brand (pass2: package managers),"Tool names become household words through committed filenames (yarn.lock, poetry.lock, CODEOWNERS)",research/competitor_landscape.md,all,M,always,problem,2,
+P100,12 measure (pass2: code search),Retained adoption could be measured without telemetry by counting public repos that commit the tool's file and refresh it,research/competitor_landscape.md,vendor,M,always,problem,2,
+S101,solution:CI,CI job summary 'structural delta: +2 / -1 connections' only when structure changes (freeze semantics),see pass_02.md,per linked problem,n/a,per structural PR,solution,2,P090
+S102,solution:PR label,PR label 'unvibecode: touches hub' computed locally from committed map,see pass_02.md,per linked problem,n/a,per PR,solution,2,P090
+S103,solution:PR label,Maintainer triage label for outside PRs that add connections into hub files,see pass_02.md,per linked problem,n/a,daily (popular OSS),solution,2,P095
+S104,solution:repo file + CI,Freeze current connections in a committed map; report only new ones (ArchUnit-style),see pass_02.md,per linked problem,n/a,per structural PR,solution,2,P094
+S105,solution:git,git log/blame on committed map answers 'when did A start depending on B',see pass_02.md,per linked problem,n/a,monthly,solution,2,P096
+S106,solution:git/terminal,`git diff @{2.weeks.ago} -- UNVIBECODE.md` or `unvibecode-mapfile since 2.weeks` summary,see pass_02.md,per linked problem,n/a,monthly,solution,2,P089
+S107,solution:terminal,`affected-tests` from map (rejected for now: closure saturates on hub-heavy repos),see pass_02.md,per linked problem,n/a,daily,solution,2,P092
+S108,solution:repo file,AGENTS.md include pointing agents to UNVIBECODE.md hub list,see pass_02.md,per linked problem,n/a,per agent session,solution,2,P093
+S109,solution:CLI/CI,Local pre-filter: upload only when a diff changes an import line,see pass_02.md,per linked problem,n/a,per PR,solution,2,P097
+S110,solution:PR,Suggest reviewers = owners of direct dependents of changed files,see pass_02.md,per linked problem,n/a,per PR,solution,2,P091
+S111,solution:measurement,Adoption metric = count of public repos with UNVIBECODE.md refreshed in last 30 days (GitHub code search),see pass_02.md,per linked problem,n/a,monthly,solution,2,P100
+S112,solution:repo file,"Name the file UNVIBECODE.md at repo root, next to README.md",see pass_02.md,per linked problem,n/a,constant,solution,2,P099
+P101,10 trust (pass3: red-team),A committed map with wrong edges (Flask fixture) could mislead reviewers unless errors are flagged,evidence/README.md#5,reviewer,H,per repo,problem,3,
+P102,1 access (pass3),Teams that refuse generated files in git need a no-commit mode (CI artifact only),hypothesis,teams,M,common,problem,3,
+P103,2 first-run (pass3),"A map file must be useful on the first run, not only after history accumulates",hypothesis,all,M,once,problem,3,
+S113,solution:repo file,"Map file lists 'suspicious connections' (test/fixture targets from non-test code, shadowed module names) in a separate section",see pass_03.md,per linked problem,n/a,per refresh,solution,3,P101
+S114,solution:CI,`--no-commit` mode writes the map to CI cache/artifact and still reports deltas,see pass_03.md,per linked problem,n/a,per PR,solution,3,P102
+S115,solution:repo file,First run renders hub files + area dependencies so day-1 value exists (onboarding page),see pass_03.md,per linked problem,n/a,once,solution,3,P103
+K1b,concept,"Committed self-checking UnvibeCode map file (UNVIBECODE.md): line-free file+symbol map, per-PR local reach line, freeze delta, upload gate, suspicious-edge section",scoring/rubric_matrix.md,"teams, OSS maintainers",n/a,per PR,concept,3,"S002,S007,S020,S021,S036,S047,S062,S066,S071,S076,S081,S086,S101,S104,S105,S109,S113,S114,S115"
+K22,concept,PR comment bot on K1b engine,scoring/rubric_matrix.md,teams,n/a,per PR,concept,3,"S001,K1b"
+K21,concept,K1b no-commit mode only,scoring/rubric_matrix.md,teams,n/a,per PR,concept,3,S114
+K19,concept,Maintainer triage label touches-hub,scoring/rubric_matrix.md,OSS maintainers,n/a,per PR,concept,2,"S102,S103"
+K20,concept,Affected tests from map (demoted by evidence),evidence/affected_tests_closure.txt,all,n/a,daily,concept,2,S107
