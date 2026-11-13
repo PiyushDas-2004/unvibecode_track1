@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unvibecode-mapfile"
+version = "0.1.0"
+description = "Community prototype: keep the UnvibeCode Connected Code Map as a committed, self-checking UNVIBECODE.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+hosted = ["unvibecode>=0.4.0"]
+
+[project.scripts]
+unvibecode-mapfile = "unvibecode_mapfile.cli:main"
+unvibe = "unvibecode_mapfile.cli:unvibe"
+git-unvibe = "unvibecode_mapfile.cli:unvibe"
+
+[tool.setuptools]
+packages = ["unvibecode_mapfile"]

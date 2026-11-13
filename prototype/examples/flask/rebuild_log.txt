@@ -1,0 +1,3 @@
+$ unvibecode-mapfile build --repository flask   # second run, same commit
+Unchanged examples/flask/UNVIBECODE.md: 238 connections, 102 source files.
+[exit 0, wall 22181 ms]

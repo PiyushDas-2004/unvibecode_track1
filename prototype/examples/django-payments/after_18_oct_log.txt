@@ -1,0 +1,18 @@
+# Step 2 (the weeks after): every commit merged to jazzband/django-payments after 5607e9e, checked against the 18 Oct map.
+# One line per commit = what the PR check-run title would show.
+$ unvibe --base ff5082a~1 --head ff5082a --oneline    # ff5082a Fix dict being used as a set
+UnvibeCode · 3 business workflow(s): card payment authorization and capture via Auth…; card payment authorization and settlement; gateway-specific checkout callback handling · 5 direct importer(s) · map current
+$ unvibe --base 3f3001d~1 --head 3f3001d --oneline    # 3f3001d [pre-commit.ci] pre-commit autoupdate
+UnvibeCode · no mapped business workflow · 0 direct importer(s) · map current
+$ unvibe --base 49c4bb3~1 --head 49c4bb3 --oneline    # 49c4bb3 Fix ruff ICN001 datetime alias
+UnvibeCode · 1 business workflow(s): gateway-specific checkout callback handling · 0 direct importer(s) · map may be stale
+$ unvibe --base f0e1f2c~1 --head f0e1f2c --oneline    # f0e1f2c [pre-commit.ci] auto fixes from pre-commit.com hooks
+UnvibeCode · 1 business workflow(s): gateway-specific checkout callback handling · 0 direct importer(s) · map current
+$ unvibe --base 529d6a5~1 --head 529d6a5 --oneline    # 529d6a5 stripe: support stripe>=15 (#501)
+UnvibeCode · 1 business workflow(s): provider-backed payment checkout and callback h… · 1 direct importer(s) · map may be stale
+$ unvibe --base 2105d02~1 --head 2105d02 --oneline    # 2105d02 Update changelog for Stripe bump
+UnvibeCode · no mapped business workflow · 0 direct importer(s) · map current
+$ unvibe --base d1eea51~1 --head d1eea51 --oneline    # d1eea51 Add more type hints to stripe logic
+UnvibeCode · 1 business workflow(s): provider-backed payment checkout and callback h… · 1 direct importer(s) · map may be stale
+$ unvibe --base 47449a1~1 --head 47449a1 --oneline    # 47449a1 Add tests for stripe conversion
+UnvibeCode · no mapped business workflow · 0 direct importer(s) · map may be stale

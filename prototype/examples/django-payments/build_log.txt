@@ -1,0 +1,8 @@
+# Step 1 (18 Oct state): build the map for jazzband/django-payments @ 5607e9e. Code map = live hosted UnvibeCode run;
+# workflows = UnvibeCode's published Business Workflow Map of the same code (hosted LLM stage was out of credits in my runs).
+$ unvibecode-mapfile build --repository django-payments_5607e9e --workflows business-workflows.html
+Business Workflow Map: 7 workflows from business-workflows.html.
+Wrote examples/django-payments/UNVIBECODE.md: 82 connections, 62 source files.
+[exit 0, wall 13836 ms]
+$ ls /tmp | grep -c unvibecode-mapfile   # temporary UnvibeCode results removed after use
+0

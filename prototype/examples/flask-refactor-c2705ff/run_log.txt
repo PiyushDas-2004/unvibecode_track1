@@ -1,0 +1,57 @@
+# Step 1: map committed before the refactor (pallets/flask @ 33012325, parent of c2705ffd), live hosted run
+$ unvibecode-mapfile build --repository flask_c2705ff_parent
+Wrote examples/flask-refactor-c2705ff/UNVIBECODE.before.md: 230 connections, 102 source files.
+[exit 0, wall 22047 ms]
+
+# Step 2: the refactor commit c2705ffd "merge app and request context" arrives; CI runs check
+$ unvibecode-mapfile check --repository flask_c2705ff --map UNVIBECODE.before.md --since 33012325
+Structural change: +3 / -2 connections versus UNVIBECODE.md
+  + `src/flask/helpers.py` → `tests/conftest.py` · app_ctx
+  + `tests/test_reqctx.py` → `tests/conftest.py` · app_ctx
+  + `tests/test_session_interface.py` → `tests/conftest.py` · app_ctx
+  - `src/flask/app.py` → `src/flask/ctx.py` · RequestContext
+  - `src/flask/app.py` → `src/flask/sansio/scaffold.py`
+Refresh with `unvibecode-mapfile build` and commit UNVIBECODE.md with this change.
+[exit 0, wall 22349 ms]
+
+# Step 3: reach of the same commit, computed locally from the committed map (no upload)
+$ unvibecode-mapfile impact --repository flask_c2705ff --map UNVIBECODE.before.md --base 33012325 --head c2705ffd
+UnvibeCode reach: 36 changed file(s); 52 other file(s) import them directly; hub touched.
+  src/flask/app.py [hub]: 25 direct importer(s)
+      changed symbol Flask is used by examples/celery/src/task_app/__init__.py, examples/javascript/js_example/__init__.py, examples/tutorial/flaskr/__init__.py, src/flask/__init__.py, tests/conftest.py, tests/test_apps/blueprintapp/__init__.py, tests/test_apps/cliapp/app.py, tests/test_apps/cliapp/factory.py …
+  src/flask/cli.py: 6 direct importer(s)
+      changed symbol FlaskGroup is used by tests/test_cli.py
+  src/flask/ctx.py: 4 direct importer(s)
+      changed symbol AppContext is used by src/flask/app.py
+      changed symbol RequestContext is used by src/flask/app.py
+      changed symbol _AppCtxGlobals is used by src/flask/sansio/app.py
+      changed symbol after_this_request is used by src/flask/__init__.py
+      changed symbol copy_current_request_context is used by src/flask/__init__.py
+      changed symbol has_app_context is used by src/flask/__init__.py
+      changed symbol has_request_context is used by src/flask/__init__.py
+  src/flask/debughelpers.py: 4 direct importer(s)
+  src/flask/globals.py [hub]: 17 direct importer(s)
+  src/flask/helpers.py [hub]: 12 direct importer(s)
+      changed symbol abort is used by src/flask/__init__.py
+      changed symbol flash is used by examples/tutorial/flaskr/auth.py, examples/tutorial/flaskr/blog.py, src/flask/__init__.py
+      changed symbol get_flashed_messages is used by src/flask/__init__.py, src/flask/app.py
+      changed symbol redirect is used by examples/tutorial/flaskr/auth.py, examples/tutorial/flaskr/blog.py, src/flask/__init__.py
+      changed symbol stream_with_context is used by src/flask/__init__.py, src/flask/templating.py
+  src/flask/json/__init__.py: 6 direct importer(s)
+      changed symbol jsonify is used by examples/javascript/js_example/views.py, src/flask/__init__.py, tests/test_testing.py, tests/type_check/typing_route.py
+  src/flask/sansio/app.py: 7 direct importer(s)
+      changed symbol App is used by src/flask/app.py, src/flask/debughelpers.py
+  src/flask/sansio/scaffold.py: 6 direct importer(s)
+      changed symbol Scaffold is used by src/flask/sansio/app.py, src/flask/sansio/blueprints.py
+  src/flask/templating.py [hub]: 11 direct importer(s)
+      changed symbol _default_template_ctx_processor is used by src/flask/sansio/scaffold.py
+      changed symbol render_template is used by examples/celery/src/task_app/__init__.py, examples/javascript/js_example/views.py, examples/tutorial/flaskr/auth.py, examples/tutorial/flaskr/blog.py, src/flask/__init__.py, tests/test_apps/blueprintapp/apps/admin/__init__.py, tests/test_apps/blueprintapp/apps/frontend/__init__.py, tests/type_check/typing_route.py
+      changed symbol render_template_string is used by src/flask/__init__.py
+      changed symbol stream_template is used by src/flask/__init__.py, tests/type_check/typing_route.py
+      changed symbol stream_template_string is used by src/flask/__init__.py
+  src/flask/testing.py: 6 direct importer(s)
+      changed symbol FlaskClient is used by tests/test_request.py
+  tests/conftest.py: 1 direct importer(s)
+  24 changed file(s) have no recorded importers.
+Import lines changed in src/flask/app.py, src/flask/ctx.py, src/flask/debughelpers.py, src/flask/globals.py, src/flask/helpers.py, src/flask/templating.py, src/flask/testing.py, tests/conftest.py, tests/test_appctx.py, tests/test_reqctx.py, tests/test_session_interface.py, tests/test_testing.py: structure may have changed; run `unvibecode-mapfile check`.
+[exit 0, wall 91 ms]

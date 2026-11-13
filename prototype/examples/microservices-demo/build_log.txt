@@ -1,0 +1,3 @@
+$ unvibecode-mapfile build --repository microservices-demo   # live hosted run
+Wrote examples/microservices-demo/UNVIBECODE.md: 17 connections, 74 source files.
+[exit 0, wall 26255 ms]

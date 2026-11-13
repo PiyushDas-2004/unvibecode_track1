@@ -1,0 +1,31 @@
+# Example A: Flask worktree at d73fa1cd; committed map; changes since 3596b1ab (6 files, adds the app.query decorator)
+$ unvibecode-mapfile check --repository flask_d73fa1c --map UNVIBECODE.md --since 3596b1ab
+No structural change: connections match UNVIBECODE.md.
+[exit 0, wall 26018 ms]
+
+$ unvibecode-mapfile impact --repository flask_d73fa1c --map UNVIBECODE.md --base 3596b1ab --head d73fa1cd --markdown
+### UnvibeCode reach: 6 changed file(s); 36 other file(s) import them directly; hub touched.
+- `src/flask/app.py` [hub]: 24 direct importer(s)
+  - changed symbol `Flask` is used by `examples/celery/src/task_app/__init__.py`, `examples/javascript/js_example/__init__.py`, `examples/tutorial/flaskr/__init__.py`, `src/flask/__init__.py`, `tests/conftest.py`, `tests/test_apps/blueprintapp/__init__.py`, `tests/test_apps/cliapp/app.py`, `tests/test_apps/cliapp/factory.py` …
+- `src/flask/helpers.py` [hub]: 13 direct importer(s)
+  - changed symbol `send_file` is used by `src/flask/__init__.py`
+- `src/flask/sansio/scaffold.py`: 5 direct importer(s)
+  - changed symbol `Scaffold` is used by `src/flask/sansio/app.py`, `src/flask/sansio/blueprints.py`
+- `src/flask/views.py`: 2 direct importer(s)
+- 2 changed file(s) have no recorded importers.
+**Import lines changed** in `tests/test_basic.py`: structure may have changed; run `unvibecode-mapfile check`.
+
+<sub>Computed locally from UNVIBECODE.md (UnvibeCode Connected Code Map) by unvibecode-mapfile, a community prototype. No code was uploaded for this report.</sub>
+[exit 0, wall 95 ms]
+
+# Example B: commit d318b68 "explain seek" (src/flask/helpers.py only). Committed map = examples/flask/UNVIBECODE.md
+$ unvibecode-mapfile check --repository flask_d318b68 --since d318b68~1
+No import lines changed since d318b68~1: skipped the UnvibeCode upload; UNVIBECODE.md is still valid.
+[exit 0, wall 70 ms]
+
+$ unvibecode-mapfile impact --repository flask_d318b68 --base d318b68~1 --head d318b68
+UnvibeCode reach: 1 changed file(s); 13 other file(s) import them directly; hub touched.
+  src/flask/helpers.py [hub]: 13 direct importer(s)
+      changed symbol send_file is used by src/flask/__init__.py
+No import lines changed: UNVIBECODE.md stays valid; no upload needed.
+[exit 0, wall 68 ms]

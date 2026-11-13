@@ -1,0 +1,5 @@
+$ unvibecode-mapfile build --repository flask   # pallets/flask @ 49943b5a, live hosted run
+Wrote .../UNVIBECODE.md: 238 connections, 102 source files.
+[exit 0, wall 26351 ms]
+$ git -C flask status --short   # nothing written inside the repository
+(empty)
