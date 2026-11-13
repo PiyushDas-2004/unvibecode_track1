@@ -1,0 +1,8 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m unittest discover -s tests
+......................................
+----------------------------------------------------------------------
+Ran 38 tests in 15.210s
+
+OK
+
+[exit 0, wall 15.6 s]

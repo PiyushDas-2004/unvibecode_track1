@@ -1,0 +1,7 @@
+# Import-structure churn proxy, 13 Nov 2026. Tool: evidence/tools/import_churn.py (counts non-merge commits, within the last 300, that add/remove an internal Python import line). Proxy only: an import-line change does not always change a code-map connection.
+## https://github.com/pallets/flask @ 49943b5a94413a530761350f04e896f76e8d620e
+flask: last 300 non-merge commits over 1277 days; 114 touch .py; 17 change internal imports (6% of commits; 0.1 per week)
+## https://github.com/healthchecks/healthchecks @ 3e9e4f940e7a61ee22bf3d4152b4ac4a0605c70f
+healthchecks: last 300 non-merge commits over 239 days; 194 touch .py; 24 change internal imports (8% of commits; 0.7 per week)
+## https://github.com/netbox-community/netbox @ e7091aae99e056c6cd7785f4dc0d963869b2a155
+netbox: last 300 non-merge commits over 87 days; 201 touch .py; 112 change internal imports (37% of commits; 9.0 per week)

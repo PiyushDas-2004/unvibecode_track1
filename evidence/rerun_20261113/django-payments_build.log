@@ -1,0 +1,5 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m unvibecode_mapfile build --repository C:\Users\piyus\unvibecode-trial\repos\django-payments --workflows C:\Users\piyus\Downloads\unvibecode\prototype\fixtures\django-payments_5607e9e_business-workflows.html --map C:\Users\piyus\Downloads\unvibecode\evidence\rerun_20261113\django-payments_UNVIBECODE.md
+Business Workflow Map: 7 workflows from django-payments_5607e9e_business-workflows.html.
+Wrote C:\Users\piyus\Downloads\unvibecode\evidence\rerun_20261113\django-payments_UNVIBECODE.md: 82 connections, 62 source files.
+
+[exit 0, wall 7.8 s]

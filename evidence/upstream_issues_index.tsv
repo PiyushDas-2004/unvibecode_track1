@@ -1,0 +1,651 @@
+number	state	created	title	labels
+1	closed	2026-08-10	Add connected-code analysis support for C and C++	enhancement
+2	closed	2026-08-10	Add a --json export option to the review CLI	enhancement
+7	closed	2026-08-12	[Challenge 2026][Track A] Detect reusable confirmation/reset tokens after first use	
+8	closed	2026-08-12	[Challenge 2026] [Track A]:` Repository path does not exist` error doesn't distinguish "not a local path" from "path is wrong" (misleading for GitHub URLs)	
+16	closed	2026-08-12	[Challenge 2026][Issue] Track per-language roadmap issues for detected-but-unsupported languages (Go, Java, C#, Kotlin, Swift)	
+17	open	2026-08-12	[Challenge 2026][Issue] Require application-level side-effect evidence before reporting HEAD-to-GET as a business flaw	P0,Product,Business Review
+19	closed	2026-08-13	[Challenge 2026][Issue] Add a single index page for generated analysis reports	
+24	closed	2026-08-13	[Issue] Add macOS installation commands (pip3 and python3)	installation-startup
+25	open	2026-08-13	[Issue] Expose retained investigation gaps in Business Risk Review	Product,Business Review,P2
+27	open	2026-08-13	[Challenge 2026][Issue] CLI output, folder name, and report headers say "SHIPREADY," not "UnvibeCode" — confusing for first-time users	P2,UX,Outputs
+29	closed	2026-08-13	[Issue] README install command inconsistent with QUICKSTART.md, TROUBLESHOOTING.md, and CONTRIBUTING.md	installation-startup
+31	closed	2026-08-13	[Issue] Make workflow descriptions more repository-specific	
+33	closed	2026-08-14	[Issue] Improve user guidance for interactive code map and post-analysis workflow	
+36	closed	2026-08-14	[Issue] Add clearer Windows installation and troubleshooting steps	installation-startup
+37	open	2026-08-14	[Issue] Clarify zero-risk results in Business Risk Findings	Product,Business Review,P1
+39	closed	2026-08-14	[Issue] Add contextual explanations for report terminology	
+41	closed	2026-08-14	"What to change" in Business Risk Findings could suggest a concrete fix pattern	
+42	open	2026-08-14	Output folder naming mismatch and missing CLI error summary on step failure	P2,UX,Outputs
+44	closed	2026-08-14	[Challenge 2026][Issue] Add Architecture Layer Output, tech stack and service topology inferred from the repository	
+46	closed	2026-08-14	Improve documentation for understanding review output files	
+47	open	2026-08-14	[Issue] Document or handle semantic-pack failures below the 2M token limit	business workflow,Technical,P1
+50	open	2026-08-14	[Issue] Business Risk Findings publishes a repository-wide "0 flaws" headline when the run's own coverage gate sets repository_wide_conclusions_allowed = false	P0,Product,Business Review
+51	closed	2026-08-14	Add a contributor checklist for documentation changes	
+52	closed	2026-08-14	[Challenge 2026][Issue] Provide a useful fallback output for small repositories with limited code connections	
+53	open	2026-08-14	UnvibeCode crashes on Windows in two different ways — here's how to fix both	bug,good first issue,Technical,P1,Installation,Parsing
+55	open	2026-08-14	[Issue] Re-running review in the same folder causes runaway token counts and hangs	bug,Technical,P1,Parsing
+56	closed	2026-08-14	[ISSUE] MCP , Remediation Missing	enhancement
+57	closed	2026-08-14	Improve troubleshooting guidance for partial hosted-analysis failures.	
+60	open	2026-08-14	Detect non-finite numeric input flowing into business-critical calculations	Product,Business Review,P2
+61	closed	2026-08-14	Outcome not understandable for small repo	
+62	closed	2026-08-14	[Issue] Semantic-pack failure produces inconsistent error messages across runs	
+63	closed	2026-08-14	[Challenge 2026][Issue] Clarify report terminology and output locations	
+64	closed	2026-08-14	Business workflow review fails on PHP repos — connected code map renders empty, resolver returns 0 edges	
+65	open	2026-08-14	[Issue] Windows path-length limitations cause review failures in deeply nested directories	Technical,P1,Installation
+66	open	2026-08-14	[Challenge 2026][Issue] Token-counting fetch failure aborts the whole review instead of falling back to the existing approximate tokenizer.	business workflow,Technical,P1
+68	open	2026-08-15	[Issue] UnvibeCode fails to resolve dynamic module imports via importlib in dependency graph generation	bug,Technical,P1,Parsing
+69	closed	2026-08-15	[Issue] Include required developer skills in Business Risk output	business risk
+71	closed	2026-08-15	[Issue] Warn users when repository path points to an entire home directory	
+72	open	2026-08-15	[Issue] Fail fast when a repository contains only detected-only languages	bug,Technical,P1,Parsing
+73	closed	2026-08-15	[CHALLENGE2026] [ISSUE]  --no-open-browser flag is hidden from --help and undocumented, and headless runs report "opened in browser tabs" even when no browser exists	
+74	open	2026-08-15	[Challenge 2026][Issue] Business Workflow & Risk Review fails silently in restricted-network environments	business workflow,Technical,P1
+76	closed	2026-08-15	[ISSUE] Engine crashes with RuntimeError (Token Limit) during semantic pack generation on large repositories.	
+77	open	2026-08-15	[ISSUE] Engine crashes with RuntimeError (Token Limit) during semantic pack generation on medium repositories.	business workflow,Technical,P1
+78	open	2026-08-15	[Issue] Show file and symbol references in Business Workflow Map	business workflow,Product,P1
+81	closed	2026-08-15	[Issue] Challenge Track A links to restricted issue creation	
+84	open	2026-08-15	[Issue] '../' imports get treated as external packages, so the dependency graph misses most cross-folder connections	bug,Technical,P0,Parsing
+85	open	2026-08-15	[Issue] Every resolved import gets recorded twice in connections.jsonl (once as imports_module, once as file_import)	bug,Technical,P1,Parsing
+86	closed	2026-08-15	review should handle an invalid repository path gracefully.	
+87	open	2026-08-15	[Challenge 2026][Issue] Same 19-file "dependency cycle" repeated on 3 unrelated Structural Review cards, but the loop-closing imports never actually run	P0,Product,Business Review
+89	closed	2026-08-15	[Issue] Add explicit UTF-8 environment handling and virtual environment isolation guide for Windows	installation-startup
+90	closed	2026-08-15	[Challenge 2026][Issue] Clarify the boundary between static import graph and runtime service relationships	
+91	open	2026-08-16	[Challenge 2026][Issue] Invalid workflow node references can discard the entire Business Workflow review	business workflow,Technical,P1
+92	open	2026-08-16	Business Risk Review returns 0 findings even on repos with real business logic	P0,Product,Business Review
+93	closed	2026-08-16	[Challenge 2026][Issue] Add better text or html rendering in the graph view	
+95	closed	2026-08-16	[Challenge 2026][Issue] Add user-configurable file and directory exclusions	
+97	closed	2026-08-16	Add a User Authentication and Account-Lifecycle workflow pack to prebuilt-workflow-paths	
+98	open	2026-08-16	[Challenge 2026][Issue] Provide complete acceptance checks for business risk findings	Product,Business Review,P2
+103	open	2026-08-16	[Bug] AST Resolution Engine fails on upward relative imports ('../') causing fragmented Code Maps	bug,Technical,P0,Parsing
+105	open	2026-08-17	Add confidence scoring and evidence tracing for inferred business workflows	business workflow,P0,Product
+106	closed	2026-08-17	Add automated installation check and CLI troubleshooting guide for Windows environments	installation-startup
+107	closed	2026-08-17	[Challenge 2026][Issue] Release preparation can leave version and release notes out of sync	
+108	closed	2026-08-17	[Challenge 2026][Issue] Challenge instructions are inconsistent between the emailed link and the live repo	
+109	open	2026-08-17	Support Windows file paths containing spaces during repository review	Technical,P1,Installation
+110	open	2026-08-17	[Challenge 2026][Issue] Preserve leading dots in hidden-directory evidence paths	Technical,P0,Outputs
+111	closed	2026-08-17	[Issue] Add Prebuilt Workflow Pack for Agentic Tool Execution and Permission Bounds	
+113	open	2026-08-18	Business Workflow & Risk Review fails with ResultValidationError on unknown connected_node_ids	business workflow,Technical,P1
+114	open	2026-08-18	[Issue] Consolidate overlapping business workflows instead of presenting duplicate request paths	business workflow,Product,P1
+115	closed	2026-08-18	[Improvement] Add a webhook ingestion and delivery workflow pack	
+116	closed	2026-08-18	[Improvement] Validate required workflow-pack headings in quality tests	documentation
+118	open	2026-08-18	[Challenge 2026][Issue] Normalize UNSUPPORTED confidence before Business Path validation	business workflow,Technical,P1
+121	closed	2026-08-18	[Challenge 2026][Issue] Failed question submissions leave the previous answer displayed	
+123	open	2026-08-18	[Challenge 2026][Issue] - Investigation gaps undefined & Repeats duplicate code snippets	business risk,Business Review,UX,P1
+124	closed	2026-08-18	[Challenge 2026][Issue] Repository discovery hides GitHub enumeration failures as empty or partial results	
+125	open	2026-08-18	[Issue] Business Path Compiler crashes on valid LLM confidence value 'UNSUPPORTED'	bug,good first issue,business workflow,Technical,P1,Parsing
+127	open	2026-08-18	Consolidate overlapping e-commerce user journeys and refine layout vs logic code attribution	business workflow,Product,P1
+129	closed	2026-08-19	[Challenge 2026][Issue] Review Tool Feedback - Windows Path / Run Execution	
+131	open	2026-08-19	[Challenge 2026][Issue] Connected Code Map omits imported source files from the dependency graph	bug,Technical,P0,Parsing
+132	closed	2026-08-19	[Challenge 2026][Issue] Trace upstream tuning provenance for production configuration values	
+133	closed	2026-08-19	[Bug] Context JSON contains unpopulated prompt placeholder and incomplete component scope	
+134	open	2026-08-19	[Issue] Distinguish external imports from genuinely unresolved imports	bug,Product,P2,Parsing
+135	closed	2026-08-19	[Challenge 2026][Issue] Consolidate redundant intermediate JSON artifacts and add CLI execution summary	
+136	closed	2026-08-19	Review should handle large repositories with a clearer fallback workflow	
+137	closed	2026-08-19	[Issue] Graph edge styles remain permanently dimmed after node hover/click events due to unresolved default color in restoreGraph()	
+138	open	2026-08-20	[Issue] Improve handling and reporting of ambiguous symbol resolution	bug,Product,P2,Parsing
+139	open	2026-08-20	Business Workflow Review misses shared authorization state across requests	P0,Product,Business Review
+141	open	2026-08-21	[Issue] Make risk severity reflect evidence confidence	P0,Product,Business Review
+142	open	2026-08-21	[Issue] Business Workflow Review fails after Step 03 request timeouts	business workflow,Technical,P1
+143	open	2026-08-22	[Challenge 2026] [ISSUE] Connected Code Map appears to flatten multi-hop import chains into direct hub edges	bug,P0,Product,Parsing
+144	closed	2026-08-22	Fix PUT employee endpoint creating records for missing IDs	
+145	closed	2026-08-22	#[Challenge 2026] [Issue] Business Workflow Map should show scalability and external service capacity	
+146	closed	2026-08-23	[Challenge 2026][Issue] Cover notification-preference changes between enqueue and send	
+147	open	2026-08-23	Connected Code Map reports an incorrect Python import relationship	bug,Technical,P0,Parsing
+148	open	2026-08-24	[Challenge 2026][Issue] Warn when built-in directory filters hide supported source files	bug,good first issue,Technical,P0,Parsing
+149	closed	2026-08-25	[Improvement] Print Business Risk "Bottom line" in CLI after successful review	
+150	open	2026-08-26	[Challenge 2026][Issue] Business Risk Findings conflate TYPE_CHECKING-only imports with real runtime dependency cycles	good first issue,business risk,P0,Product,Business Review
+151	closed	2026-08-26	Quality tests silently pass if workflow pack directory is empty	Technical
+153	open	2026-08-27	TypeScript @/* path aliases are skipped instead of resolved	bug,Technical,P0,Parsing
+154	closed	2026-08-29	hkj	
+155	open	2026-08-29	[Issue] Surface deterministic evidence repairs instead of reporting PASSED	business workflow,P0,Product
+156	closed	2026-08-30	[Bug] UnvibeCode crashes with FileNotFoundError when path contains spaces	
+157	open	2026-08-30	[Issue] Show a clear data-processing notice before hosted analysis	P0,Product,Installation
+158	open	2026-08-31	[Issue] TypeScript dotted module names are mistaken for file extensions	bug,Technical,P0,Parsing
+159	open	2026-08-31	[Issue] "Partial Coverage" in Risk Review creates a false sense of security	P0,Product,Business Review
+192	closed	2026-09-30	[UnvibeCode Challenge - Track 1] Connected Code Map renders completely blank for Python/Streamlit repository	
+193	closed	2026-10-05	[Issue] Make partial review coverage clear when a workflow stage fails	Product,Business Review
+194	closed	2026-10-05	[Challenge 2026] Business Workflow Map incorrectly limits request dispatch to class-based views	
+196	closed	2026-10-06	[Issue] Connected Code Map omits browser fetch-to-FastAPI route connections	bug,Technical,P0
+197	closed	2026-10-07	[Issue] Make workflow evidence directly navigable to supporting code	business workflow,Product
+198	closed	2026-10-07	[Issue] Business Workflow Map can infer functional service discovery from static UI controls	
+199	closed	2026-10-07	[UnvibeCode Challenge - Track 1] PermissionError [WinError 5] on resolved_graph.json in Temp causes PARTIAL review on Windows (intermittent)	
+200	closed	2026-10-07	Request lifecycle pipeline fragmented across redundant workflows with overlapping code slices	
+201	closed	2026-10-07	Business workflow analysis fragments Flask request lifecycle and introduces redundant code slices	business workflow,P0
+202	closed	2026-10-08	UnicodeEncodeError crash on Windows due to unhandled character map	
+203	closed	2026-10-08	[Bug] TRAFFIC_TOKEN is read but not used in GitHub API Authorization header	
+204	closed	2026-10-08	[UnvibeCode Engineering Challenge 2026 — Cohort 2 - Track 1] Risk Findings misses privilege escalation: public /register accepts client-supplied role "admin"	bug,business risk,P0,Product,Business Review
+205	closed	2026-10-08	[Issue] Rust AST Engine Fails on Visibility Re-Exports (`pub use`) and Scoped Relative Imports (`super::` / `self::`)	
+206	closed	2026-10-08	[Issue] Coverage config references jinja2 instead of itsdangerous	
+207	closed	2026-10-08	[Issue] Distinguish example-application workflows from core repository workflows	
+208	closed	2026-10-08	[Issue] Fast Lane Symbol Resolver drops module-level object instantiations (FastAPI router, Flask app), breaking Connected Code graph edges	bug,codegraph,Technical,P0,Parsing
+209	closed	2026-10-08	[Issue] Detect missing server-side payment verification in business risk review	bug,business risk
+210	closed	2026-10-08	[Issue] Finding labeled "established" while basis is inferred; inferred business rule ignores `*Pool` naming in the same response	
+211	closed	2026-10-08	[Issue] Risk Findings reports no risks despite un-awaited validateJWT() and missing ownership checks	business risk,P0,Product,Business Review
+212	closed	2026-10-08	Risk review flags the rate-limited /api/ai route but misses an unthrottled sibling route that mints paid Twilio TURN credentials	business risk,P0,Product,Business Review
+213	closed	2026-10-08	[Issue] Push-delivery poison-row finding overlooks Prisma and SQL cascade deletion	
+214	closed	2026-10-08	Risk finding on TraceHawk correctly flags silent failure handling	New workflow
+215	closed	2026-10-08	Risk review missed a reproducible concurrency issue in the payment workflow	business risk,P0,Product,Business Review
+216	closed	2026-10-08	[Challenge 2026][Engineering Issue] Business Workflow Map cites abstract SessionInterface methods as evidence for signed-cookie persistence	
+217	closed	2026-10-09	Unhandled Unicode characters ('●', '✓', progress bar) crash CLI with UnicodeEncodeError on Windows default console (cp1252)	
+218	closed	2026-10-09	[Bug] UnicodeEncodeError on Windows during redirected stdout / legacy consoles due to 'cp1252' charmap encoding with '\u25cf'	
+219	closed	2026-10-09	[Issue] Test suite files assigned E1 direct evidence for core workflows, triggering WORKER_EVENT_CONSUMER component misclassification	
+220	closed	2026-10-09	[Issue] UI silently fails to show the Connected Code Map when the backend runs out of API credits	
+221	closed	2026-10-10	[UX] Explain unavailable business workflow and risk results in partial reports	
+222	closed	2026-10-10	Fast Lane symbol graph cap (1,000 edges) renders only 420/1,179 files, leaving 574 precomputed context downloads unreachable through canvas UI	codegraph,Technical,P0
+223	closed	2026-10-10	[Challenge 2026][Issue] Download-size dropdown shows ~45K tokens for a repository of only ~3.4K tokens	
+224	closed	2026-10-10	[UnvibeCode Engineering Challenge 2026 — Cohort 2 - Track 1] Risk Findings misses cross-user deletion of plagiarism evidence in delete_account	Technical,Business Review
+225	closed	2026-10-10	[Challenge 2026][Issue] Vendored dependencies inflate repository size estimates and trigger the large-repository cutoff	good first issue,codegraph,Technical
+226	closed	2026-10-10	Concurrent cache misses trigger redundant Internet Archive requests in getImagePool()	
+227	closed	2026-10-10	UnvibeCode Engineering Challenge 2026	
+228	closed	2026-10-10	Add reproducibility metadata to review reports	
+229	closed	2026-10-11	Python submodule imports lose dependency edges when a package contains init.py	codegraph,Technical,P0,Parsing
+230	closed	2026-10-11	[Issue] Silent redirection of review outputs to %USERPROFILE%\UnvibeCode\results leaves empty ./unvibecode_results on Windows without notification	
+231	closed	2026-10-11	[Issue] Reconcile workflow security warnings with final risk findings	
+232	closed	2026-10-12	[Challenge 2026][Issue] Connected Code Map drops every TypeScript import written with a ".js" suffix (Node ESM style), leaving whole backend unconnected	codegraph,Technical,P0,Parsing
+233	closed	2026-10-13	[UnvibeCode Engineering Challenge 2026 - Cohort 2 - Track 1] Secret redaction regex corrupts ordinary code in report snippets	
+234	closed	2026-10-14	[Issue] Go repo review reports success but resolves 0 connections	codegraph,Technical,P0,Parsing
+235	closed	2026-10-14	[Issue] Risk finding headline describes an uncited sibling method and contradicts its own card (smolagents executor cleanup)	business risk,P0,Product,Business Review
+236	closed	2026-10-14	[Challenge 2026] Improve readability of overlapping workflow descriptions	business workflow,P0
+237	closed	2026-10-14	[Issue] Clarify line-number semantics in normalized connection records	
+238	closed	2026-10-14	[Issue] Reachability canonicalization marks production workflows as TEST_DEMO_SAMPLE at HIGH confidence as soon as any test file is cited	business workflow,P0,Product,Business Review
+239	closed	2026-10-14	# [Issue] Fix the Windows PowerShell virtual environment activation command	
+240	closed	2026-10-14	[Issue] .sql query files are silently skipped, so aiosql-style repos lose their data layer in every output	
+241	closed	2026-10-14	[Challenge 2026][Issue] Structural Review flags Ruby RSpec test files (spec/, *_spec.rb) as production complexity hotspots	Technical,P1
+242	closed	2026-10-15	Review output files may get included in subsequent repository analysis	Technical,P1
+243	closed	2026-10-15	Express.js Workflow Report Omits Implementation References	
+244	closed	2026-10-15	Tested UnvibeCode v0.3.13 in E:/testcode - Connected Code Map generated successfully	
+245	closed	2026-10-17	Test of unvibecode on CareerJournal AI	
+246	closed	2026-10-17	Inconsistent capitalization in generated key workflow titles	
+247	closed	2026-10-17	[Challenge 2026][Issue] Link relevant Skills to Business Risk Findings	
+248	closed	2026-10-17	[Issue] Workflow context asserts a request-context guard that Flask's implementation does not enforce	
+250	closed	2026-10-18	[Issue] Risk Findings does not report “stock reduced before payment, no rollback” in a minimal 4-file repro	
+251	closed	2026-10-19	Non-deterministic risk report outputs across repeated runs on identical codebase	
+252	closed	2026-10-19	[Issue] Redact common credential aliases in exported context	
+253	closed	2026-10-19	[Issue] "N of M code areas reviewed" counts failed and skipped requests as reviewed	
+255	closed	2026-10-19	[Issue] Connected Code Map links unrelated Python and TypeScript files through name-only fallbacks	
+256	closed	2026-10-19	[Issue] Re-export-only files produce no relationship records in Connected Code Map	
+257	closed	2026-10-20	[Issue] Distinguish inferred business rules from verified requirements	
+258	closed	2026-10-20	[Issue] unique_symbol_via_resolved_module fallback resolves production imports to pytest fixtures in test files	
+259	closed	2026-10-20	PayPal refund marks payment as refunded before validating the response	
+260	closed	2026-10-20	[Issue] Documented results path differs from CLI output	
+261	closed	2026-10-21	[Issue] Jobs enqueued by dotted-path string (RQ/Celery) are disconnected from callers, so workers drop out of workflow and risk review	
+262	closed	2026-10-22	[Bug] Node.js parent-relative imports using `../` fail to resolve in Connected Code Map	
+263	closed	2026-10-22	[Issue] Absolute Python imports in a sub-directory backend (apps/api/app) never resolve by module path; 3 of 12 internal imports dropped, the rest guessed by filename	
+264	closed	2026-10-22	[Issue] Flag generated fallback fixtures as unverified	
+265	closed	2026-10-23	[Issue] Connected Code Map invents file_import edges from an external module's trailing name (langgraph.graph → local graph.py), contradicting the run's own external-module record	
+266	closed	2026-10-23	[Issue] Third-party submodule import (langgraph.graph) creates a false file_import edge to an unrelated local graph.py	codegraph,Technical,P0,Parsing
+267	closed	2026-10-23	[Issue] Complete Repository Context includes massive static CSS files, causing severe token bloat	
+268	closed	2026-10-24	[Issue] Business Workflow Map splits every React → Express feature into separate frontend-only and backend-only workflows	business workflow,P0,Product,Business Review
+269	closed	2026-10-24	[Issue] Business Risk Findings produces non-testable acceptance checks despite actionable remediation guidance	
+270	closed	2026-10-25	[Bug] Business Risk Findings — Coinbase checkout risk cites unrelated provider code	
+271	closed	2026-10-25	Analysis fails on one request due to invalid evidence reference	
+272	closed	2026-10-25	[Bug] Connected Code Map skips valid TypeScript @/ path aliases, omitting internal dependencies	
+273	closed	2026-10-25	[Bug] Ruby dependency resolution misses parenthesized requires and relative parent paths	
+274	closed	2026-10-25	[Issue] Python encoding cookies are ignored, silently corrupting exported source	Technical,P0,Parsing
+275	closed	2026-10-25	[Issue] Review fails with ResultValidationError when evidence lines fall outside chunk boundaries	
+276	closed	2026-10-25	Title: [Bug] Connected Code Map — AST parser drops internal function references in FastAPI Depends()	
+277	closed	2026-10-25	[Bug] Business Workflow Map describes unmounted FastAPI endpoints as callable API workflows	
+278	closed	2026-10-25	[Issue] Custom-named Python virtual environments are scanned as project code	
+279	closed	2026-10-25	[Bug] Connected Code Map — Module-empty relative imports (`from . import <symbol>`) fail with module_scope_mismatch, dropping package __init__.py dependencies	
+280	closed	2026-10-26	[Issue] Business Workflow Map credits an empty demo sign-out function as implementing AI ticket triage	
+281	closed	2026-10-26	Workflow references do not cover all described operations.	business workflow,Technical
+282	closed	2026-10-26	[Bug] Connected Code Map — _node_candidate_paths treats intermediate dots (e.g. .gen) as file extensions, dropping valid TypeScript imports	
+283	closed	2026-10-26	[Issue] Root-relative script paths in nested Vite apps resolve from the repo root	
+284	closed	2026-10-26	[Bug] Complete Repository Context — unresolved_relationships.jsonl concatenates three unnormalized record shapes (347 duplicated imports, 39 already-resolved edges), so workflow context reports stdlib imports as unconfirmed references	
+285	closed	2026-10-26	[Bug] Connected Code Map — HTML parser treats template expressions in href/action (e.g. {{ url_for(...)     }}) as external module imports	
+286	closed	2026-10-27	[Bug] Fast Lane Python parser — file silently dropped when ast.parse raises SyntaxError, still reported as high confidence	
+287	closed	2026-10-27	[Challenge 2026][Issue] source_line in connections.jsonl is the chunk start line, not the line of the import	
+288	closed	2026-10-27	[Bug] Connected Code Map — same-file function calls produce zero connections	
+289	closed	2026-10-27	[Enhancement] Show which workflows are linked to files changed between Git revisions	
+290	open	2026-10-28	[Challenge 2026][Cohort 3][Track 1] PARTIAL analysis mode drops customer_reason in HTML, overrides status banner colors via !important, strips LLM Context UI despite FAST_LANE completion, and overwrites started_at timestamps	
+291	closed	2026-10-28	Idea: Show what changed since the last review	
+292	closed	2026-10-28	[FUNCTIONAL GAP]  Critical functional defect in Ruby/Rails connected code	Technical,P0
+294	closed	2026-10-28	[Issue] Risk Findings page shows green "REVIEW COMPLETE" badge while the same page reports partial coverage (2 of 8)	
+295	closed	2026-10-29	[Bug] Connected Code Map — Python AST parser drops module-level variable & singleton assignments, falsely reporting core imports as 'symbol_not_found'	Technical,P0,Parsing
+296	closed	2026-10-29	[Issue] Encoding corruption test misses common mojibake sequences	
+297	closed	2026-10-29	BUG: Connected Code Map — Python AST parser drops PEP 695 type aliases (type X = ...), causing symbol_not_found for internal type imports	
+298	closed	2026-10-29	[Challenge 2026][Issue] Connected Code Map silently drops Jinja template links ({% extends %}, {% include %}, render_template)	
+299	open	2026-10-29	[Bug] dashboard-renderer — UnicodeEncodeError on Windows cp1252 terminals crashes the entire review before any output is saved	bug,Technical,P0,Parsing
+300	closed	2026-10-29	[Bug] LinkerResolutionModule — Relative submodule imports ('from . import <module>') drop resolved targets with 'symbol_not_found' and generate zero dependency edges	P0,Parsing
+302	closed	2026-10-29	[Bug] Connected Code Map — Go module resolution drops all internal imports when go.mod is in a subfolder, and package_edges are omitted from the browser graph	
+303	closed	2026-10-29	[Feature/Improvement] Graceful warning handling & large-scale repository handling notice in CLI output	
+304	closed	2026-10-29	Developer Adoption Feedback: UX Analysis on a Strabismus Screening App	
+305	closed	2026-10-29	[Bug] TypeScript interfaces, type aliases, and enums are dropped from symbol resolution	
+306	closed	2026-10-29	[Bug] Connected context — Python overload stubs become implementation targets and displace executable code	
+307	closed	2026-10-29	Windows quick start relies only on py, but python works when the launcher is misconfigured	
+308	closed	2026-10-29	[Bug] Connected Code Map — Python AST linker omits src/ layout resolution, dropping package imports or misrouting them to test fixtures	
+309	closed	2026-10-29	[Issue] Silent CLI blackout during Business Analysis due to worker stdout redirection hiding API heartbeats.	
+310	closed	2026-10-29	[Bug] connections.jsonl — target-side coordinates collapse to file level: every edge into a whole_file-chunked (≤2500-token) target carries target_line=1 and every file_import edge carries symbol=null, all labelled "confidence":"high"	
+311	open	2026-10-29	[Challenge 2026][Cohort 3][Track 1] [Bug] Risk Findings — TYPE_CHECKING-only import closes a dependency cycle, reporting a 67-line leaf module as a 14-file hotspot, listing 6	
+312	open	2026-10-29	[Challenge 2026][Cohort 3][Track 2] Diff-scoped pre-commit check: `unvibecode check --staged` as the repeat-usage trigger	
+313	closed	2026-10-29	[Bug] context_readable_export — Schema key mismatch ('symbol' vs 'qualified_name'/'entity') collapses over 32% of workflow references to 'Source section'	
+314	closed	2026-10-29	Unhandled UnicodeEncodeError on Windows when stdout is redirected or non-interactive	
+315	closed	2026-10-29	[Bug] Credential screening - Stripe, Google and SendGrid keys and password-only Redis URLs reach the hosted service unredacted	bug,Technical,P0
+316	closed	2026-10-30	[Bug] LinkerResolutionModule — `_module_matches_file` leaf-token loop matches unrelated packages sharing common file stems, creating false high-confidence symbol and file edges	codegraph,Technical,P0,Parsing
+317	closed	2026-10-30	[Bug] customer_runner — UnicodeEncodeError ('charmap' / cp1252) crashes CLI on Windows consoles	
+318	closed	2026-10-30	[Bug] Connected Code context — "Wider connection context" silently drops direct-neighbour code that "Optimal" includes (wider scope is not a superset)	codegraph,Technical,P0,Parsing
+319	closed	2026-10-30	[Feature Request] Add a repository size pre-check before analysis	
+320	closed	2026-10-30	[Bug] Connected Code Map - _js_import_symbols collects local aliases from ES/TS aliased and namespace imports, causing false partial_symbol_resolution and dropped namespace edges	codegraph,Technical,P0,Parsing
+321	closed	2026-10-30	[Enhancement] Preserve or document empty Python package markers in Complete Repository Context	
+323	closed	2026-10-30	[Bug] shipreadyv2 Step 02 (business_workflow_review) — TokenCounter crashes the entire Business Workflow/Risk review on a blocked/unreachable tiktoken blob download, instead of degrading like the identical counter used in the Code Map stage	bug,business workflow,Technical,P0
+324	closed	2026-10-30	[Bug] Connected Code Map — default import whose local name differs from the exported class name gets symbol_not_found and no imports_symbol edge	
+325	closed	2026-10-30	[Bug] Go documentation — type-reference file edges exceed the documented call-site guarantee	
+326	closed	2026-10-30	[Bug] redaction.py — YAML multiline block scalars with blank lines truncate redaction, leaking trailing credential lines unredacted	bug,Technical,P0
+327	closed	2026-10-30	[Bug] Credential screening — _BARE value pattern excludes '=', so base64-padded secrets on recognized labels reach the hosted service unredacted	bug,Technical,P0
+328	closed	2026-10-30	[Issue] Distinguish zero risk findings from incomplete analysis	
+329	closed	2026-10-30	[Issue] Hosted API quota exhaustion leaves Business Analysis unavailable without actionable recovery guidance	
+330	closed	2026-10-30	[Bug] LinkerResolutionModule — Global candidate count check precedes module scoping, marking unique package-matched imports as ambiguous_symbol and dropping dependency edges	
+331	closed	2026-10-30	[Bug] Connected Code Map — relative .globals import resolves app_ctx to tests/conftest.py	
+332	closed	2026-10-30	[Bug] FastContextTokenCounter — chars/3.2 estimate under-counts Hindi/Chinese code 2.6–3x, so 30K/45K connected-context scopes exceed their stated caps	
+333	closed	2026-10-30	[Enhancement] Connected Code Map — detect HTTP client-to-route relationships	
+334	closed	2026-10-30	Hosted analysis API credit exhaustion halts Business Review without BYOK or resume mechanism	
+335	closed	2026-10-30	[Bug] UnicodeEncodeError crash on Windows (cp1252) when dashboard renders bullet characters — all analysis output lost	
+336	closed	2026-10-30	[Bug] Scanner / Token Counter — Static HTML docs and nested report outputs are ingested as source symbols, triggering false token-limit breach	
+337	closed	2026-10-30	LLM Context omits existing source code from repository files	
+338	open	2026-10-31	UX & Onboarding Analysis: Improving CLI setup flow, Windows path clarity, and interactive workflow navigation	
+339	open	2026-10-31	Engineering Issue  Investigation	
+340	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Chunker — 33 of 36 oversized-entity segments are not valid Python (split inside dict/argument literals), and overlap duplicates 355 lines of Flask source	
+341	open	2026-10-31	[Bug] Go linker ignores build constraints and marks platform-specific implementations as ambiguous	
+342	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Repository Context — function-local imports lose symbol edges, so selections silently omit the imported code	
+343	open	2026-10-31	typo solution	
+344	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — Go `:=`, PHP/Ruby `=>`, Rust `&str` and Python `b""` assignments bypass redact_text	
+345	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — PGP private key blocks are not redacted because _PEM requires "PRIVATE KEY-----"	
+346	open	2026-10-31	[Bug] Material source coverage gate — pytest suites, test settings, and the testapp demo are counted as uncovered "production source files"	
+347	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Enhancement] Hardening Runtime Security: Implementing Strict Environment Validation Boundaries and Memory Optimization	
+348	open	2026-10-31	[Challenge 2026][Cohort 3][Track 2] DX Audit: Optimizing Time-to-First-Token (TTFT) and Reducing Cognitive Load in Multi-Agent Onboarding	
+349	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map — implementation references in C/C++ files are silently dropped from the HTML report, so C++-derived workflows show no code at all	
+350	open	2026-10-31	[[Challenge 2026][Cohort 3][Track 1] [Bug] Code Understanding — Windows review crashes on a checked-out symlinked source file	
+351	open	2026-10-31	[Bug] Short, specific description of the problem	
+352	open	2026-10-31	[Bug] Connected Code Map — PHP Tree-Sitter parser traverses both declaration and clause nodes with unanchored .replace("use", "", 1), corrupting class names containing "use" and dropping grouped imports	
+353	open	2026-10-31	[Bug] Credential screening : YAML anchors and tags bypass redaction for labeled secrets	
+354	open	2026-10-31	[Bug] Python linker — literal-string importlib.import_module("pkg.mod") / __import__("pkg.mod") are detected but never resolved, so the loaded module gets no connection and no context selection	
+355	open	2026-10-31	Selector treats missing symbol IDs as proof of a same-symbol causal connection	
+356	open	2026-10-31	Malformed URL fragment throws URIError during results dashboard initialization	
+357	open	2026-10-31	[Bug] Connected Code Graph Builder — Duplicate and redundant relationship entries emitted for identical file-symbol pairs in connections.jsonl	
+358	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Python linker does not index module-level LocalProxy variables	
+359	open	2026-10-31	[UX] Small project ends as "PARTIAL / could not be completed" while the log says the workflow analysis was intentionally SKIPPED; the reason is unclear	
+360	open	2026-10-31	[Bug] Business analysis context — Go method calls are linked to another receiver's implementation	
+361	open	2026-10-31	[Bug] engine/customer_runner — Unhandled credit exhaustion crash on Pass 1 LLM feed without custom API key fallback	
+362	open	2026-10-31	[Bug] Connected Code Map — file search selects off-screen nodes without focusing the graph viewport	
+363	open	2026-10-31	Improve recovery guidance when hosted analysis credits are exhausted	
+364	open	2026-10-31	[Bug] Connected Code Map — explicit Go generic calls omit helper implementations from context downloads	
+365	open	2026-10-31	[Bug] Complete Repository Context - exported context ZIP and interactive report store ship without any credential screening; labeled secrets land verbatim in the "LLM-ready" artifacts	
+366	open	2026-10-31	[Bug] Connected code map / repository context — imports resolve to unrelated same-name files in tests/ (65 of 403 edges in Flask)	
+367	open	2026-10-31	[Bug] Connected Code export — JSON envelope and relationship records exceed the advertised context budget even when the selected code fits	
+368	open	2026-10-31	[Bug] Credential screening — URL scheme prevents redaction of query-string secrets (?api_key=, ?token=)	
+369	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Risk Findings — reports "0 findings, coverage complete" while password reset/change leaves existing 8-day sessions valid (full-stack-fastapi-template)	
+370	open	2026-10-31	[Challenge 2026][Cohort 3][Track 1] [Bug] Critical Business Insight Selector — _brace_loop_contains_sink requires parentheses, failing FANOUT_REACHES_SINK proof for all Go and Rust loops	
+371	open	2026-10-31	[Bug] TreeSitterAstAdapter & LanguageAwareImportResolver - Rust 'pub use' declarations retain visibility prefix, dropping re-exported dependency edges	
+372	open	2026-11-01	Connected Code Map (PHP) — require/require_once/include/include_once are never extracted: zero file edges and no unresolved records	
+373	open	2026-11-01	Challenge 2026 | Cohort 3 | Track 1 | Bug - Business analysis crashes when no_proxy contains bracketed IPv6	
+374	open	2026-11-01	[Bug] Connected Code Map — TypeScript "@/" path-alias imports skipped as hard_path_skipped although alias is defined in vite.config.ts	
+375	open	2026-11-01	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — literal fallbacks after env reads (`os.environ.get(...) or '...'`, `os.getenv(k, '...')`, `process.env.X || '...'`) reach the hosted service unredacted	
+376	open	2026-11-01	[Issue] JavaScript AST extraction misses functions assigned to object properties	
+377	open	2026-11-01	[Bug] TreeSitterAstAdapter (_extract_php) — Group use declarations (`use Prefix\{A, B}`) extract raw curly strings and un-namespaced stems, dropping internal dependency edges	
+378	open	2026-11-01	[Challenge 2026][Cohort 3][Track 1][Bug] Connected Code Map — failed tree-sitter grammar download leaves every JS/TS/Go/PHP/Ruby file with 0 imports and 0 symbols, is retried per file (60 s each), and the review still reports COMPLETE	
+379	open	2026-11-01	[Bug] Connected Code context — `from x import *` gives no symbol edges, so code the file uses is left out of its context	
+380	open	2026-11-01	[Bug] Connected Code Map — Python wildcard imports do not create symbol-level relationships	
+381	open	2026-11-01	[Bug] Connected Code Map / Repository Context - form feed (^L) or U+2028 in a file shifts all exported line numbers and cuts functions into the wrong chunk	
+382	open	2026-11-01	[Challenge 2026][Cohort 3][Track 1] [Bug] Python route detection: @patch / @mock.patch unit tests are tagged as HTTP route handlers (api_route)	
+383	open	2026-11-01	[Bug] JS/TS import extraction — import attributes replace the module path with "json" or "css"	
+384	open	2026-11-01	[Bug] Connected Code Map — JS import query suffixes disconnect existing worker and module source files	
+385	open	2026-11-01	[Bug] Connected Code Map ignores HTML `<base href>` when resolving relative assets	
+386	open	2026-11-01	[Bug] Connected Code Map — local image assets referenced by HTML are always marked unresolved	
+387	open	2026-11-01	[Issue] Python aliased re-exports are not resolved in the symbol graph	
+388	open	2026-11-01	[Bug] Credential screening — an unterminated `BEGIN PRIVATE KEY` header erases the rest of the Step 03 request, including other files	
+389	open	2026-11-01	[Bug]: Area title fallback in customer_workflow_group_title pollutes report headings, terminal summaries, and LLM copy prompts	
+390	open	2026-11-01	[Bug] Connected Code Map — inline Rust `mod name { … }` blocks become high-confidence edges to unrelated `name.rs` / `name/mod.rs` files	
+391	open	2026-11-01	[Bug] Connected Code Map — Rust nested modules resolve to the wrong directory when declared in name.rs	
+393	open	2026-11-01	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map — Rust `use crate::...` is resolved against the repo-root `src/`, so Cargo workspace crates lose internal edges or get high-confidence edges into a different crate	
+394	open	2026-11-01	Cohort 3 - Track 2: UX feedback for first-time developer - onboarding confusion	
+395	open	2026-11-01	[Bug] Business Risk pipeline — missing transition-to-effect links prevent state-change candidates from qualifying	
+396	open	2026-11-01	[Bug] Credential screening — subscript assignments like app.config["SECRET_KEY"] = "..." reach the hosted model unredacted	
+397	open	2026-11-01	[Bug] BoundaryChunker - _build_prelude truncates multi-line imports, generating broken file_preludes in LLM context exports	
+398	open	2026-11-01	[Bug] Archive GitHub traffic workflow — commit step uses git diff, which ignores the untracked CSVs, so traffic history is never committed	
+399	open	2026-11-01	[Bug] AI System Design skill — architecture PNG in skills/ is truncated and undecodable; the fix in daa0c44 only updated the cheatsheet copy	
+400	open	2026-11-01	[Bug] Guardrails runner — deeply nested config JSON crashes check with an uncaught RecursionError and exit code 1 instead of the documented exit 2	
+401	open	2026-11-01	[Bug] Guardrails runner — init on an existing file and questions on an invalid config both print a generic 'Invalid configuration' error with exit 2, hiding the real cause	
+402	open	2026-11-01	[Bug] Quality CI — the RAG review example's 21 unit tests, the guardrails runner and its shipped profiles are never run or linted in CI	
+403	open	2026-11-01	[Bug] Intent guardrails notebook 02 — 3 of 13 'held-out' routing scenarios are exact training sentences, inflating the reported routing metrics	
+404	open	2026-11-01	[Bug] skills/ — six guides are stale copies of the AI Engineering Cheatsheet versions, and 8 of 9 skill folders have no SKILL.md	
+405	open	2026-11-01	[Bug] Repository scanner — directories named coverage/build/env/out/dist/target are pruned at any depth, silently dropping real source packages (e.g. all of coverage.py's coverage/ package)	
+406	open	2026-11-01	[Bug] Supplemental context (Vue/Svelte/Astro) — SENSITIVE_ASSIGNMENT drops whole login/auth components on benign lines like token: localStorage.getItem(...) while a hardcoded const apiKey = '...' passes	
+407	open	2026-11-01	[Bug] CLI / customer runner — unwritable results folder (e.g. running from a read-only directory) crashes with an uncaught OSError traceback and exit 1 instead of [STOPPED] and exit 2	
+408	open	2026-11-01	[Bug] Business Workflow Map - repeated runs on unchanged code produce different workflow sets: workflows disappear and business_path IDs are unstable	
+409	open	2026-11-01	[Bug] Business Risk Findings — final adjudication drops reporting ceilings and publishes stronger verdicts than permitted	
+411	open	2026-11-01	[Challenge 2026][Cohort 3][Track 1] [Bug] Packaging — no Linux ARM64 wheels since 0.3.9, so `pip install --upgrade unvibecode` silently installs 0.3.8, which sends un-redacted secrets to the hosted service	
+412	open	2026-11-01	[Bug] Code Understanding / Connected Code Map — Partial review execution failure on standard Python repositories (Flask)	
+413	open	2026-11-01	[Bug] AST Parser — Unhandled KeyError on missing node attributes during AST traversal	
+414	open	2026-11-01	[Bug] Parser / Graph Engine — Async/Await concurrent coroutine dispatch calls bypass static call-edge resolution in multi-file event loops	
+415	open	2026-11-01	[Bug] Connected Code Map — Go methods on factory results are silently omitted	
+416	open	2026-11-01	[Bug] LinkerResolutionModule — explicit __init__.py re-export ignored when a name has two definitions: `from pkg import Name` reported ambiguous_symbol, no symbol edge (e.g. `from fastapi import Depends`)	
+417	open	2026-11-01	[Bug] Connected Code Map — Go dot-imported functions disappear from connected downloads	
+418	open	2026-11-02	[Bug] LanguageAwareImportResolver — Relative `from . import <symbol>` imports fail to resolve package `__init__.py`, dropping internal dependency edges	
+419	open	2026-11-02	[BUG] Connected Code Map layout breaks on narrow mobile screens	
+420	open	2026-11-02	[Bug] Connected Code Map — PHP trait and inheritance dependencies disappear from downloads	
+421	open	2026-11-02	[Connected Code Map] Flask app.py incorrectly linked to ConfigAttribute without clarifying inherited relationship	
+422	open	2026-11-02	[Bug] CLI / customer runner — Ctrl-C early in `review` leaves analysis-status.json at RUNNING and prints raw tracebacks instead of an interrupt message	
+423	open	2026-11-02	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map — customer_workflow_groups splits workflows that share a topic into separate single-workflow "<Topic> workflows" areas	
+425	open	2026-11-02	[Bug] Connected Code Map — Python absolute imports fall back to a unique file-stem match, so stdlib imports and src-layout packages link to unrelated same-named files	
+426	open	2026-11-02	[Bug] Business Risk selector — the hidden-coupling family is always rejected	
+427	open	2026-11-02	[Bug] Pass 1 validation — duplicate activation facts repeatedly fail semantic analysis requests	
+428	open	2026-11-02	[Bug] Exported component alias is unresolved in connected code map	
+429	open	2026-11-02	[Bug] Connected Code Map — in src//lib-layout repos, `from pkg import Name` is dropped as `module_scope_mismatch` when the name is re-exported through a subpackage, although the candidate is unique and the package's own `__init__` chain resolves it	
+430	open	2026-11-02	Title: [Bug] Windows Path Normalization: Backslashes trigger 173 hard-path skips and fragment Connected Code graph	
+431	open	2026-11-02	[Bug] Business Workflow Map omits 3 of 6 orchestrator pipeline stages (deep research, outreach drafting, delivery) — GTM-Research-Copilot	
+432	open	2026-11-02	[Bug] Connected Code linker — graph serialization runs out of memory on an under-limit Svelte checkout	
+433	open	2026-11-02	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map — Rust #[path] module declarations are marked unresolved	
+434	open	2026-11-02	[Bug] Results dashboard tabs — arrow keys do not navigate the ARIA tablist	
+435	open	2026-11-03	[Bug] Business Path Compiler — changing a variable name reverses the database-write classification	
+436	open	2026-11-03	[Bug] Source-to-chunk mapping — functions on the same line link to the wrong code fragment	
+437	open	2026-11-03	[Bug] Business review selector — UNKNOWN_SCOPE passes an identity check and displaces valid candidates	
+438	open	2026-11-03	[Challenge 2026][Cohort 3][Track 1] [Bug] Python Fast Lane incorrectly marks TYPE_CHECKING else-branch imports as type-only	
+439	open	2026-11-03	[Bug] Critical Business Insight Selector — multiple_effect_proofs groups line numbers strictly per-file, dropping cross-file MULTI_EFFECT_CONSISTENCY risks and falsifying ordering evidence	
+440	open	2026-11-03	[Bug] Final report publisher — rejected findings remain in the executive summary	
+441	closed	2026-11-03	Clarify HTTP client-to-server relationship coverage in Connected Code Map	
+442	open	2026-11-03	[Bug] TypeScript path resolver — target wildcards drop core Vue implementations from downloads	
+443	open	2026-11-03	[Bug] Results dashboard - complete repository ZIP label overstates source-only context contents	
+444	open	2026-11-03	[Challenge 2026][Cohort 3][Track 1] [Bug] LinkerResolutionModule — `_merge_python_entities` overwrites `kind: "route_handler"` with `function`/`async_function`, so no Python endpoint survives into the resolved graph	
+445	open	2026-11-03	[Bug] Completed context export — COMPLETE reviews attach findings to contradictory source versions	
+446	open	2026-11-03	Go package-level variables are not resolved as method receivers	
+447	open	2026-11-03	[Bug] Complete Repository Context — completed-review guide tells users to attach all of `chunks.jsonl` to one AI chat (85K–2.6M estimated tokens vs the tool's own 75K limit)	
+448	open	2026-11-03	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map — oversized line fragments exported in the wrong order	
+449	open	2026-11-03	[Challenge 2026][Cohort 3][Track 1] [Bug] translate_lang always uses "es" instead of the given language (FastAPI scripts/translate.py)	
+450	open	2026-11-03	[Challenge 2026][Cohort 3][Track 2] [UX] Connected Code Map is hard to read on large repos (1,232 files) and search selection does not auto-zoom	
+451	open	2026-11-03	[Bug] TypeScript configuration — valid comments discard every configured path mapping	
+452	open	2026-11-03	[Bug] TypeScript resolver — baseUrl imports lose thousands of local module targets	
+453	open	2026-11-03	[Bug] JavaScript import extraction — static AMD arrays leave jQuery with zero dependencies	
+454	open	2026-11-04	[Bug] Go AST adapter — type-switch case variables retain unknown receiver types	
+455	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] TypeScript resolver — path aliases inherited through tsconfig "extends" are never loaded (Bitwarden: 61.8% of the code graph missing)	
+456	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Code Understanding — one deeply nested file raises RecursionError and fails the whole review (SymPy produces no output)	
+457	open	2026-11-04	[Challenge 2026][Cohort 3][Track 2] Workflow Scorecard — grade detected workflows against the 18 shipped workflow packs so every re-run moves a visible score	
+458	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Business analysis request context — `external_dependencies` is always `[]` because no resolver writes the record shape `_repository_summary()` reads	
+459	open	2026-11-04	[Bug] Connected Code context export — relationship source_line points to chunk start, not the import location	
+460	open	2026-11-04	#[Bug] Linker Resolution Module — Stem Fallback Promoted to High Confidence, Creating False Cross-Domain Symbol Edges	
+461	open	2026-11-04	[Bug] BoundaryChunker — 40-line decorator scan detaches Flask run command registration and options from its function chunk	
+462	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Complete Repository Context — `workflow_context.md` publishes internal `UNKNOWN` sentinels as workflow purpose, title, rules and functions, which the HTML report suppresses	
+463	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] CustomerDashboardRenderer — UnicodeEncodeError on cp1252/Windows consoles when rendering progress status bullets ('\u25cf')	
+464	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map — authentication workflows are silently dropped on small apps (0 of 7 runs), even though the model names them as capabilities: the engine discards its own capability inventory and caps single-request repos at 3 workflows	
+465	open	2026-11-04	Track 1: Backend Review - full-stack-fastapi-template(43 files) -  Analysis Complete	
+466	open	2026-11-04	[Bug] Business Workflow Map — Flask session workflow omits required SECRET_KEY precondition	
+467	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Path Compiler (Step 04) — a contract-valid `NO_MATERIAL_PATH` Pass 1 result aborts the whole review as PARTIAL/FAILED instead of reporting "no business workflows found"	
+468	open	2026-11-04	[Bug] Business Workflow Map — merges unrelated Coinbase and Dotpay callbacks into one workflow	
+469	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflows — Workflow card text concatenation and empty implementation references for PyJWT	
+470	open	2026-11-04	Python import resolver - bare `import pkg` / `from pkg import x` never links to `src/pkg/__init__.py` in src-layout	
+471	open	2026-11-04	[Bug / Accuracy] Reconstructed Business Workflow Call Chains Omit Critical Intermediate Dispatchers and Context Lifecycles (e.g. Flask full_dispatch_request)	
+472	open	2026-11-04	[UX & Adoption] Enhancing Developer Workflow: 5 Friction Points & Architectural Suggestions for Repeated Adoption	
+473	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Repository coverage — Jupyter notebooks are invisible to the estimate and the graph, so a 99.9%-notebook repository is reported as a COMPLETE review with an empty Connected Code Map	
+474	open	2026-11-04	[Bug] Connected Code Map — AST parser fails to map explicit Python imports (models.py isolated, established imports marked "uncertain")	
+475	open	2026-11-04	Title: [Bug] LanguageAwareImportResolver — relative package imports (from . import X, from .. import Y) fail to resolve package-level __init__.py symbols, disconnecting core state and severing graph edges	
+476	open	2026-11-04	[Track 2 Proposal]: Frictionless Onboarding, Zero-Setup Execution, and CI/CD Automation to 5x Weekly Active Developers	
+477	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map (HTML) — workflow rules and guards are never rendered, hiding a destructive DELETE that workflow_context.md reports	
+478	open	2026-11-04	[UX/DX] Improve CLI progress visibility during "Business analysis" and stabilize non-deterministic workflow descriptions	
+479	open	2026-11-04	[Bug] Code graph builder — Severe performance regression & symbol resolution failure (30+ min hang on 149 files)	
+480	open	2026-11-04	[Bug] Pass 1 runner — queued requests keep running after a save error stops result collection	
+481	open	2026-11-04	[Bug] docs/HOW_IT_WORKS.md — says calls are mapped for supported source files; call edges exist only for Go, and no report or manifest lists the relationship types produced	
+482	open	2026-11-04	Repository scanner — Vite's `.vite/deps` prebundle cache is ingested as first-party source (token estimate inflated, vendor bundles scanned, cache bytes alone can trigger the large-repository cutoff)	
+483	open	2026-11-04	[Bug] Fast Lane path role hints — keywords are matched as raw substrings, so `border.py` / `recorder.py` are labeled `transaction_related_file` and that label is sent to the hosted model	
+484	open	2026-11-04	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — PHP define() constants, cryptographic *_salt labels, and CMS config files (wp-config.php, settings.php) bypass redaction	
+485	open	2026-11-04	(Cohort 3 Track 2) Developer Experience (DX) and Adoption Analysis Report 	
+486	open	2026-11-04	# [Cohort 3 Track 1] Engineering Issue Investigation Report	
+487	open	2026-11-05	[Bug] LinkerResolutionModule -- Unexported class methods in JS/TS pollute symbol index, causing false ambiguous_symbol failures	
+488	open	2026-11-05	[Bug] analysis-status.json remains RUNNING after review process terminates (clean exit; Fast Lane COMPLETED, Business Review FAILED)	
+489	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] LinkerResolutionModule — Speculative re-export resolution (unique_symbol_via_resolved_module) creates false cross-language symbol edges without verifying export provenance	
+490	open	2026-11-05	TypeScript .js import specifiers fail to resolve to matching .ts source files	
+491	open	2026-11-05	[Bug] Business Workflow Map — merges unrelated Coinbase and Dotpay callbacks into one workflow	
+492	open	2026-11-05	[Bug] Connected Code Map — Broken relative chunk link resolution when viewing nested report-support pages in standalone iframe mode	
+493	open	2026-11-05	[Challenge 2026][Cohort 3][Track 2] LLM Context export omits investigation-gap status from review summary	
+494	open	2026-11-05	[Bug] TreeSitterAstAdapter & LinkerResolutionModule — Separate export clauses and lexical declarations omit symbols or tag them unexported, dropping verified module edges with 'symbol_not_found'	
+495	open	2026-11-05	Track-1 [Python symbol resolver]	
+496	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Full Analysis fails with no recovery when OpenAI API credits are exhausted mid-run	
+497	open	2026-11-05	[Bug] Fast Lane & Graph Pipeline — Go call edges are unconditionally converted into phantom 'file_import' relationships targeting line 1	
+498	open	2026-11-05	[Bug] Fast Lane & Graph Pipeline — Go call edges are unconditionally converted into phantom 'file_import' relationships targeting line 1	
+499	open	2026-11-05	[Bug] Code Map — Windows path separators break intra-document cross-reference links	
+500	open	2026-11-05	[Bug] Pass 1 guarded runner — HTTP 500/503 failures bypass retry policy and prematurely reduce business-analysis coverage	
+501	open	2026-11-05	[Bug] LanguageAwareImportResolver — Unnormalized relative parent imports (../) fail to resolve in JS/TS, severing module graphs and triggering false symbol mismatches	
+502	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Archive toggle allows cross-user task modification	
+503	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — form feed characters in multiline secrets trigger RedactionError and abort analysis	
+504	open	2026-11-05	[Challenge 2026][Cohort 3][Track B] Developer Adoption: First-time user was able to understand codebase and run prebuilt workflow without setup friction	
+505	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1][Improvement] Consolidate repeated behavior rules in workflow_context.md	
+506	open	2026-11-05	[Bug] Business Risk Findings: a config-conditional guard cited as proof is dropped from the finding's trigger and CRITICAL severity	
+507	open	2026-11-05	[Bug] Parser – Misattributes imported module exports in src/flask/json/__init__.py to local definitions	
+509	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — a secret on the line after `key:` or `KEY=` is sent unredacted because `_BARE`/`_ASSIGN` match across line breaks	
+510	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map — ASCII-only topic tokenizer cuts "résumé" to "sum" and names a workflow area "Sum workflows"	
+511	open	2026-11-05	[Bug] TypeScript linker resolves declaration-test imports to runtime .js and omits .d.ts context	
+512	open	2026-11-05	[Bug] PythonSemanticExtractor — Omission of ast.Subscript strips generic base classes and corrupts class inheritance hierarchy during graph merge	
+513	open	2026-11-05	[Bug] Step 05 candidate deduplication — SAME_PATH_FRAGMENT can suppress independent business risk findings across distinct endpoints	
+514	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Fast Lane application profile — shape keywords are matched as raw path substrings, so `api/client.ts` becomes a CLI app and a React page becomes a background worker	
+515	open	2026-11-05	[Bug] HTML asset resolver — percent-encoded unreserved characters drop valid stylesheet dependencies	
+516	open	2026-11-05	[BUG] Non-deterministic workflow and path coverage drops across repeated runs	
+517	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Candidate Risk Selector (Stage 05) — Non-transitive relationship grouping causes order-dependent duplicate risk findings	
+518	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Risk Findings Structural Review: each Python elif counts as one more nesting level, so UnvibeCode publishes flat if/elif chains as "Complex decision function" hotspots	
+519	open	2026-11-05	[Bug] Source scanner — TypeScript `.mts` / `.cts` files are silently skipped, so imports of existing files are reported as external and the context manifest says `skipped_files: []`	
+520	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Python import extractor — _is_type_checking misses aliased guards (import typing as t / t.TYPE_CHECKING), so Flask's type-only imports are labelled conditional_import (0 type_checking_only, 19 of 19 guards)	
+521	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map — unclicked hover preview remains open after node blur	
+522	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1][Bug] Python imports in try-else and finally blocks are incorrectly marked as fallback-uncertain	
+523	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Credential screening — any qualifier after a known label (API_KEY_PROD, DB_PASSWORD_2, apiKeyProd, token_v2) disables redaction; values reach the hosted model	
+524	open	2026-11-05	Title: [Bug] download-bundle — venv-only dependency graph pollutes `connections.jsonl` and inflates `.venv.msys2-broken` entries in `deeppvmapper-repository-context.zip`	
+525	open	2026-11-05	[Bug] Fast Lane context export: UTF-8 BOM on a source file becomes line 1 content and reaches the Pass 1 LLM input instead of being stripped	
+526	open	2026-11-05	[Bug] Python symbol resolver — module-level constants assigned non-literal expressions (path joins, `os.environ.get`) are dropped from the symbol index and reported `symbol_not_found`	
+527	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code — Optimal context for src/flask/app.py omits 7 of 10 direct imports while including 7 example/test caller files	
+528	open	2026-11-05	[Bug] Connected Code Map resolves `sqlalchemy.orm` to unrelated testing fixture via `stem_fallback`	
+529	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] connections.jsonl reports source chunk start instead of actual import line	
+530	open	2026-11-05	[Issue] Link Business Workflow implementation references to code locations	
+531	open	2026-11-05	[Bug] HTML parser — inline module imports disappear from Connected Code Map	
+532	open	2026-11-05	[Bug] JS/TS import extraction — conditional require/import calls lose alternative module paths	
+533	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1][Bug] Markdown exporter breaks source references when a filename contains a backtick	
+534	open	2026-11-05	[Challenge 2026][Cohort 3][Track 1] [Bug] Ruby extractor — `autoload :Const, "path"` is never extracted, so 43 of rack's file dependencies vanish from the Connected Code Map	
+535	open	2026-11-05	[Bug] Python symbol resolution — pytest fixtures in conftest.py incorrectly included in connected code graph	
+536	closed	2026-11-06	PythonSemanticExtractor.visit	
+537	open	2026-11-06	[Issue] Make investigation gaps more actionable in the final report	
+538	open	2026-11-06	Review: UnvibeCode demo helped me understand smolagents workflows easily	
+539	open	2026-11-06	Published sample report metadata — claims 15 workflow areas while the rendered report contains 11	
+540	open	2026-11-06	[Challenge 2026][Cohort 3] [Bug] Graph Pipeline / Parsers — Silent data loss and incomplete symbol extraction from non-UTF-8 source files via errors="ignore"	
+541	open	2026-11-06	[Bug] linked_evidence() raises KeyError for custom edge IDs	
+542	open	2026-11-06	[Bug] Fast Lane & Stage 01 Go Tree-sitter Parser (`TreeSitterAstAdapter`) — Go AST return type extractor omits collection types (`slice_type`, `array_type`, `map_type`, `channel_type`), corrupting constructor resolution and dropping cross-package method calls	
+543	open	2026-11-06	[Bug] Package Packaging & Native Extension Runtime Loader — Multi-Platform Distribution Failure — Non-Portable Windows AMD64 Wheel and Hard Dependency on Compiled `.pyd` Extensions Break Linux and macOS Deployments Despite Documented Cross-Platform Support	
+544	open	2026-11-06	[Bug] Core Filesystem Discovery / Customer Runner & Fast Lane Engine — Directory traversal enters infinite recursive loop on Windows NTFS directory junctions and directory symlinks	
+545	open	2026-11-06	[Bug] Core Filesystem Discovery / Preflight & Token Estimator — Filesystem discovery completely ignores `.gitignore`, ingesting excluded secrets, vendor bundles, and build outputs	
+546	open	2026-11-06	[Bug] Core File I/O / Fast Lane Engine & Normal Lane Stage 01 — `safe_read_text` lacks exception handling, crashing Fast Lane and Stage 01 workers on locked or unreadable files	
+547	open	2026-11-06	[Bug] Fast Lane & Stage 01 Go AST Extraction & Resolver (`_collect_go_usages`, `_build_go_catalog`, `_resolve_go_usages`) — Go multi-file package struct and type references produce 0 usages and 0 dependency edges, leaving models and schemas disconnected from sibling service files	
+548	open	2026-11-06	[Bug] Python Import Resolver & Linker (`LanguageAwareImportResolver._resolve_python`, `LinkerResolutionModule._resolve_symbol`) — Python relative multi-imports (`from . import a, b`) discard all submodules after the first, misattributing sibling module names as internal symbols and failing resolution	
+549	open	2026-11-06	[Bug] Business Workflow Compiler (Stage 04) — Physical source line position overrides lifecycle rank in customer workflow display sort order	
+550	open	2026-11-06	[Bug] Business Workflow Compiler (Stage 04) — Unconditional first-resource binding in `normalize_group` misattributes multi-resource state transitions	
+551	open	2026-11-06	[Bug] Output Artifact Generator & Results Landing Page Hub — Output Artifact Divergence — Critical Root File `00_unvibecode_results.html` and Companion Reports Placed Exclusively in Subdirectory with Non-Standard Names, Breaking Documentation and Automated Pipelines	
+552	open	2026-11-06	[Bug] File Discovery, Boundary Chunker & Context Packaging Engine — Zero-Byte and Whitespace-Only Source Files Cause Silent Count Desynchronization and Phantom Exclusion Between Preflight Token Estimator and Context ZIP Manifest	
+553	open	2026-11-06	[Bug] Fast Lane Context Selection Engine — Context Selection Budget Underfill — `FastLaneContextDownloadBuilder` Prematurely Aborts Dependency Accumulation at Hardcoded 35K/60K Thresholds Instead of Advertised 45K/75K Context Budgets	
+554	open	2026-11-06	[Bug] Website Landing Page & Smolagents Sample Hub Navigation — Broken Cross-Page Anchor Navigation in Primary Product CTAs Due to Missing Target IDs	
+568	open	2026-11-06	[Bug] Customer Runner — No-op string self-replacement in publish_connected_code_results (customer_runner.py line 2650)	
+569	open	2026-11-06	[UX] Improve readability of Additional Code Areas in UnvibeCode reports	
+570	open	2026-11-06	[Bug] Repository size gate — files in "unsupported" languages are excluded from the estimate but still analysed, so a 4.8M-token Java repository passes the 2M limit as 505K	
+571	open	2026-11-06	[Challenge 2026][Cohort 3][Track 1] [Bug] CLI error reporting: local TLS verification failure is reported as "hosted analysis service was temporarily unavailable"	
+572	open	2026-11-06	[Challenge 2026][Cohort 3][Track 1] [Quality] Duplicate lost-response scenarios in order-placement workflow pack	
+573	open	2026-11-06	[Challenge 2026][Cohort 3][Track 1] [Bug] Go interface dispatch calls are silently omitted instead of recorded as unresolved usages	
+574	open	2026-11-06	[Bug] Connected Code Map / TypeScript resolver — every `@/` path-alias import is silently skipped, dropping 90 of 101 frontend import edges	
+575	open	2026-11-06	[Challenge 2026][Cohort 3][Track 1] [Bug] Python safe-constant filter - dunder and lowercase literal constants (`__version__`, `default_timeout`) are never indexed, so valid internal imports are reported `symbol_not_found`	
+576	open	2026-11-06	[Challenge 2026][Cohort 3][Track 2] Developer experience analysis of UnvibeCode: first-run friction, headless/CI gaps, and repeat-usage improvements (measured on v0.3.15)	
+577	open	2026-11-06	[Bug] Credential redaction (shipreadyv2/redaction.py) — plaintext PHP array secrets pass through to the hosted analysis gateway	
+578	open	2026-11-06	[Bug] Hosted analysis client - developer's OPENAI_ORG_ID, OPENAI_PROJECT_ID and OPENAI_CUSTOM_HEADERS are sent with every request to shipready-api.alphashots.ai	
+579	open	2026-11-06	[Bug] CLI preflight — C/C++ repositories using .cc, .cxx, .h or .hpp are told they are "documentation-only or empty"	
+580	open	2026-11-06	[Bug] Context Exporter / Repository Context Bundle — Complete Repository Context ZIP manifest.json omits primary artifacts ('workflow_context.md' and 'unresolved_relationships.jsonl') from contents index	
+581	open	2026-11-06	[Bug] TypeScript path alias resolver incorrectly matches aliases with longer prefixes	
+582	open	2026-11-06	[Challenge 2026][Cohort 3][Track 1] [Bug] .tsx/.jsx extensions matched as substrings, tagging every TSX/JSX file as ui_component_file and inflating WEB_FRONTEND to HIGH	
+583	open	2026-11-06	[Bug] context-pack & static-linker — Multi-schema inconsistency and static web-asset pollution in unresolved_relationships.jsonl	
+584	open	2026-11-07	[Investigation] Graceful fallback & pre-flight messaging when API credits are exhausted during partial repository reviews	
+585	open	2026-11-07	[Bug] Connected Code Map — selected file's connections stay small among dimmed nodes; no focus/zoom-to-selection view	
+586	open	2026-11-07	[Challenge 2026][Cohort 3][Track 1] Improve clarity between focused context downloads and complete repository ZIP	
+587	open	2026-11-07	[Bug] CLI Runner — Orphaned temp directories and missing cleanup hooks on worker failure during API quota exhaustion	
+588	open	2026-11-07	[Bug] Pass 1 runner — skipped requests are logged as API attempt errors	
+589	open	2026-11-07	[Bug] customer_runner.py / walk_source_tree — Exported report folders bypass is_generated_analysis_folder() and push token estimate over the 2M limit	
+590	open	2026-11-07	[Bug] Business Risk selector — FANOUT_REACHES_SINK counts `return`, `yield` and `.get()` as sinks, so read-only loops are SELECTED as ELIGIBLE_STRONG fan-out risks	
+591	open	2026-11-07	[Bug] Connected Code Map report — `cdn_resources="in_line"` is ignored for Bootstrap, so the local report loads two files from cdn.jsdelivr.net on every open	
+592	open	2026-11-07	UnicodeEncodeError on Windows when output is redirected (cp1252): review crashes on ● and ✓	
+593	open	2026-11-07	analysis-status.json: FAST_LANE started_at is stamped at completion (started_at ≈ completed_at while duration_seconds is correct)	
+594	open	2026-11-07	[Challenge 2026][Cohort 3][Track 1] [Security] redact_payload() Leaks Secrets in Nested Lists and Dictionaries Due to Lost Sensitive-Key Context	
+595	open	2026-11-07	[Bug] Substring Matching Causes False-Positive File Role Classification	
+596	open	2026-11-07	[Bug] Go parser — named result variables lose method calls and can resolve to a shadowed package	
+597	open	2026-11-07	[Bug] Repository scanner — malformed .unvibecode-output marker stops the entire review	
+598	open	2026-11-07	[Bug] Python parser (Connected Code Map) — UTF-8 BOM source files raise SyntaxError, silently lose every import edge, and an all-BOM repo is skipped as "unsupported"	
+599	open	2026-11-07	[Bug] Risk Findings page shows an investigation gap count without details	
+600	open	2026-11-07	[Challenge 2026][Cohort 3][Track 1] [Bug] Python resolver drops absolute package submodule imports when __init__.py does not re-export them	
+601	open	2026-11-07	[Bug] LinkerResolutionModule — Relative submodule imports (`from . import submodule`) mislink to foreign symbols or drop valid edges	
+602	open	2026-11-07	[Bug / Edge-Case] Asynchronous Context Boundary Leak and Propagation Vulnerability in ASGI Routing Handlers	
+603	open	2026-11-07	[Bug] Python AST Extractor — Walrus Operator (ast.NamedExpr) assignments inside comprehension loops drop local symbol binding edges	
+604	open	2026-11-07	[Bug] CLI / Runner — Each review run allocates a fresh work directory, so earlier results and the advertised recovery files are never reused	
+605	open	2026-11-07	[Bug] TokenAwareBatchPacker — Missing external chunk deduplication in `_build_batch` injects duplicate bridge excerpts, exhausting the 800-token bridge budget and starving connected context	
+606	open	2026-11-07	Business Workflow Map omits PocketFlow's documented Coding Agent application workflow	
+607	open	2026-11-07	[Bug] Stage 02 supplemental context — Vue/Svelte/Astro components that aren't imported straight from a JS/TS file never get sent to business analysis (vue-realworld: 1 of 19 sent, sveltejs/realworld: 0 of 23, Astro blog: 0 of 14)	
+608	open	2026-11-07	[Bug] JavaScript resolver fails to resolve valid relative imports containing parent-directory segments (`..`)	
+609	open	2026-11-07	[Bug] Business Workflow Map fails to connect Blueprint.register() to static file serving	
+610	open	2026-11-07	[Bug] Python Symbol Resolution Links LocalProxy Import to an Unrelated Test Fixture	
+611	open	2026-11-07	[Bug] Connected Code Map (Rust) — grouped `use crate::{a::X, b::Y}` keeps at most the first module, and rustfmt-style multi-line groups produce no edges	
+612	open	2026-11-07	[Bug] Repository Context — graph links marked uncertain are exported as verified	
+613	open	2026-11-07	[Challenge 2026][Cohort 3][Track 1] [Bug] Business Workflow Map — plural-stripping runs before the stopword check, so "process" becomes "Proces", bypasses CUSTOMER_GROUP_STOPWORDS and merges unrelated workflows (django-payments)	
+614	open	2026-11-07	[Bug] Business Workflow Map Issue — pipeline stages split across AI requests are silently dropped	
+615	open	2026-11-08	[Bug] JavaScript/TypeScript resolver — sibling workspace package imports are dropped and reported external because package.json is never read	
+616	open	2026-11-08	[Bug] Connected Code Map (PHP) — `use` of a framework/vendor class falls back to any same-named local class, creating false edges (e.g. `Illuminate\Support\Facades\Log` → `app/Models/Log.php`)	
+617	open	2026-11-08	[Bug] Connected Code Map (Ruby) — `require` only searches the repository-root `lib/`, so every gem in a multi-gem repository loses its internal edges (rails: 0 of 2,526 internal requires resolved)	
+618	open	2026-11-08	Preflight — pure Vue/Svelte/Astro repositories rejected as unsupported despite Stage 02 supplemental context support	
+619	open	2026-11-08	[Bug] Ruby Connected Code Map — glob-loaded files get no dependency edges from `Dir[...]` loaders	
+620	open	2026-11-08	[Challenge 2026][Cohort 3][Track 1] [Bug] Step 06 reuses the v2_run_001 identifier after the report directory is rebased	
+621	open	2026-11-08	[Bug] Connected Code Map: _render_fast_lane_symbol_graph drops file nodes without symbol edges, omitting 34 Flask source files	
+622	open	2026-11-08	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map (HTML/CSS) — `../` references are never normalized, so every parent-relative stylesheet, script and page link is dropped as "external" (Bootstrap v3: 115 internal file links lost)	
+623	open	2026-11-08	[Bug] Business Path Compiler — Express server responses are classified as browser-only views and excluded from material-effect proofs	
+624	open	2026-11-08	[Bug] Pass 1 evidence validation — citations to cross-pack bridge code the model never saw are accepted as E1_DIRECT_CODE (Flask 3.1.2: 1,409 unseen lines citable)	
+625	open	2026-11-08	[Bug] FastLaneContextDownloadBuilder._write_repository_bundle — omits graph["unresolved_go_usages"] (dropping all 116 unresolved Go calls on spf13/cobra) while duplicating unresolved_imports in unresolved_relationships.jsonl	
+626	open	2026-11-08	[Challenge 2026][Cohort 3][Track 1][Bug] Python linker resolves imports to functions inside statically unreachable if False blocks	
+627	open	2026-11-08	[Bug] ProcessPoolExecutor — SIGTERM/SIGKILL orphans worker processes, freezes analysis-status.json at RUNNING, and leaks credentials in temp directory	
+628	open	2026-11-08	[Bug] JavaScript barrel re-exports do not create direct file dependency edges	
+629	open	2026-11-08	[Bug] customer_runner — review_outcome is "FINDINGS_REPORT_READY" when the final review publishes 0 flaws	
+630	open	2026-11-09	[Challenge 2026][Cohort 3][Track 1][Bug] Interim HTML Report — Status banner claims "Business analysis completed" but Business Workflow tabs are hidden	
+631	open	2026-11-09	[Bug] Business Path Compiler / Critical Business Insight Selector — uncertain stem_fallback edges are rebuilt as HIGH and accepted as causal proof	
+632	open	2026-11-09	[Bug] UnvibeCode 0.4.0 silently excludes source files matching credential filename patterns	
+633	open	2026-11-09	[Bug] Business Risk selector (make_candidate) — falsy short-circuit in candidate_conf boosts 0% effect confidence to 100%, promoting unverified candidates to ELIGIBLE_STRONG	
+634	open	2026-11-09	[UX Feedback] Local setup returns API connection error without clear troubleshooting guidance	
+635	open	2026-11-09	[Bug] Connected Code Map — Fails to detect inline/local module imports in Python	
+636	open	2026-11-09	[Bug] Fast Lane Context Selection Engine: Equal-hop sibling dependency edges (source_hop == target_hop) are omitted from boundary queue prioritization	
+637	open	2026-11-09	[Bug] Business Workflow Context Export — Workflow ordinals differ between HTML report and workflow_context.md	
+638	open	2026-11-09	[UX] Make hosted-analysis quota errors clearer	
+639	open	2026-11-09	[Bug] CLI review / source packaging — `--dry-run` reports "27959 files would be uploaded" for home-assistant/core, then the real review aborts with an unexplained "Source exceeds pilot file/size limits" (undocumented 10,000-file cap)	
+641	open	2026-11-10	Django-payments-track-1	
+642	open	2026-11-10	[Bug] Hosted API client - `ProxyHandler({})` discards HTTPS_PROXY, so `review`/`health` cannot reach the service on proxy-only networks	
+643	open	2026-11-10	[Bug] API client — interrupted downloads leave partial destination files	
+644	open	2026-11-10	[Bug] Source upload - one uploaded source file named aux/con/nul/prn/com#/lpt# makes the service reject the whole repository as "Invalid source archive", without naming the file	
+645	open	2026-11-10	[Bug] Connected Code Map drops Flask/Jinja url_for static asset links	
+646	open	2026-11-10	[Challenge 2026][Bug] Mutually exclusive flag visibility persists across completion requests	
+647	open	2026-11-10	[Bug] `unvibecode resume <job_id>` crashes at once with "This report folder already exists"	
+648	open	2026-11-10	[Bug] Output Guide — Clicking outside the open guide does not dismiss it	
+649	open	2026-11-10	[BUG] Context ZIP ships unresolved_relationships.jsonl but manifest, README and OUTPUTS.md don't list it	
+650	open	2026-11-10	[Bug] Connected Code Map: stem_fallback generates reflexive self-loop edges for external imports	
+651	open	2026-11-10	[Bug] Pipeline / Report — 'Business Risk Findings' section is silently omitted from execution output without warning or fallback state	
+652	open	2026-11-10	[Bug] Source packaging (archive.pack) — one source file with a pre-1980 modification time aborts the whole review with "ZIP does not support timestamps before 1980"	
+653	open	2026-11-10	[Bug] Connected Code Map — .js extensions corrupted during module-scope matching	
+654	open	2026-11-10	[Challenge 2026][Cohort 3][Track 1] [Bug] CLI --dry-run does not validate archive limits, reporting successful uploads when review would fail	
+655	open	2026-11-10	[Bug] Repository size gate: bytes/3.2 token estimate overstates ordinary source code by 12-36%, so the documented 2M limit is reached at ~1.47M-1.79M real tokens	
+656	open	2026-11-10	[Bug] Connected Code Map — Different source paths generate identical context download filenames	
+657	open	2026-11-10	[Challenge 2026][Cohort 3][Track 1] [Bug] Connected Code Map: Test fixtures, docs config, and example apps pollute the architectural dependency graph	
+658	open	2026-11-10	[Bug] Credential screening (shipreadyv2/redaction.py) — API/webhook secrets embedded in URL paths (Slack/Discord/Telegram) are sent to the hosted service unredacted	
+659	open	2026-11-10	[Bug] CLI — Windows charmap crash on progress display + resume command fails on existing output folder	
+660	open	2026-11-10	[Challenge 2026][Cohort 3][Track 1] [Bug] Critical Business Insight Selector - NATIVE_MUTATION_PATTERN regex drops valid PERSISTENT_DATA_MUTATION effects on standard mutation phrasing, falsely suppressing business risk findings	
+661	open	2026-11-10	[Bug] JavaScript import extraction — names after the first 50 silently disappear, hiding required code from Optimal context	
+662	open	2026-11-10	[Bug] Upload archiver (archive.py) — 0.4.0 never uploads `go.mod`, so every internal Go import loses module resolution (chi: 58 → 0 package edges, 1,050 → 668 symbol edges)	
+663	open	2026-11-10	[Bug] Connected Code Map (Rust): inline modules create false file-import edges and #[path] modules are not resolved	
+664	open	2026-11-11	[Bug] Python source reader — PEP 263 encoded files are silently corrupted	
+665	open	2026-11-11	[Bug] Connected Code Map — misses Windows Node.js local imports with mismatched filename casing	
+666	open	2026-11-11	[Bug] API client accepts premature EOF before Content-Length; CLI crashes on BadZipFile	
+667	open	2026-11-11	[Bug] CLI — stale interim HTML report can be mistaken for the final report after review completion	
+668	open	2026-11-11	[Bug] CLI — (output / name).rglob() in cli.py line 114 fails to discover top-level HTML reports, crashing with RuntimeError	
+669	open	2026-11-11	[Bug] Source archiver (archive.py) — TEXT_SUFFIXES omits documented .htm extension, silently skipping HTML files or failing with "No supported source files found"	
+670	open	2026-11-11	[Bug] Pass1FullRunner & CustomerRunner — Unhandled Windows NTFS file lock collision on shipreadyv2_pass1_full_results.jsonl aborts Step 03 review with PermissionError	
+671	open	2026-11-11	[Bug] Source archiver (archive.py)  - `source_files()` fails to detect NTFS directory junctions on Windows, causing infinite recursive traversal and unauthorized external directory packaging	
+672	open	2026-11-11	[Bug] Business Risk selector (Stage 05) — external-dependency regexes match Flask's inbound `request.` object and local `send_*()` file helpers, so static-file serving is nominated as an "External dependency" risk	
+673	open	2026-11-11	[Bug] Upload client (0.4.0) — whole source files are uploaded unredacted, while README/DATA_PROCESSING.md still promise local graph building and credential redaction before sending	
+674	open	2026-11-11	[Bug] Business Workflow Map — ImplementationReferenceIndex._decorator_start fails on multi-line decorators, truncating route and parameter bindings from workflow references	
+675	open	2026-11-11	Upload archiver (archive.py) — one source file whose name is not valid UTF-8 stops the whole review, and the error does not say which file	
+676	open	2026-11-11	Connected Code: Optimal Context Selection Omits Required Cross-File Implementation	
+677	open	2026-11-11	[Bug] TreeSitterAstAdapter — Aliased CommonJS require calls are omitted and shadowed bindings create false edges	
+678	closed	2026-11-11	[Challenge 2026][Cohort 3][Track 1] [Bug] AST Redaction Bypass on Custom Secret Formats in Multi-Language Repositories (Credential Redaction & Parsing Pipeline)	
+679	open	2026-11-11	[Challenge 2026][Cohort 3][Track 1] [Bug] AST Redaction Bypass on Custom Secret Formats in Multi-Language Repositories (Credential Redaction & Parsing Pipeline)	
+680	open	2026-11-11	[Bug] CLI --dry-run — Unescaped repository filenames can forge status lines and emit ANSI terminal controls	
+681	open	2026-11-12	[Bug] Business Workflow Map — Omits Blueprint static-file serving path	
+682	open	2026-11-12	[IMP] Business risk API is disabled till Nov16	P0
+683	open	2026-11-12	Proposal: PR business-impact analysis that maps a diff to workflows, risks, and checks	
+684	open	2026-11-12	Proposal: record ownership and decisions for business risk findings	
+685	open	2026-11-12	Proposal: document a machine-readable review contract for coding agents	
+686	open	2026-11-12	[Bug] Business Workflow Map — Omits inherited entry-point App.register_blueprint and concrete subclass files in sansio class hierarchies	
+687	open	2026-11-12	CLI fails with "[STOPPED] Server busy or result not ready" on Flask repo	
+688	open	2026-11-12	[Bug] Python constant extraction: literal tuple/list assignment targets disappear from the symbol index	
+689	open	2026-11-12	[Challenge 2026][Cohort 3][Track 2] First-run DX on Windows (v0.4.0): undocumented CLI help, opaque "Server busy" failure, and --dry-run missing from docs	
+690	open	2026-11-12	[Bug] Business Workflow Map — Full-stack React + Node/Express workflows are split into disconnected fragments with false "no persistence / no runtime entrypoint" claims	
+691	open	2026-11-12	[Bug] Business Workflow Map — Document ingestion/indexing workflow missing: an uploaded PDF never becomes an answerable session in the map	
+692	open	2026-11-12	[Bug] API client — CLI cannot reach the API on proxy networks because the client disables environment proxies, and the failure is reported as an "SSH tunnel" problem	
+693	closed	2026-11-12	[Bug] UnvibeCode overstates Flask lifecycle compatibility when subclass methods use ctx: AppContext | None	
+694	open	2026-11-12	Homepage asks for repo but as a recent graduate I don't have any company repo to try	
+695	open	2026-11-12	[Bug] Hosted results export — analysis-status.json points to server paths for downloaded reports	
+696	open	2026-11-12	[Bug] Connected Code Map — missing route handler reference for nested blueprint modules	
+697	open	2026-11-12	[Bug] Python AST & Linker: PythonSemanticExtractor omits type aliases, dropping 225 symbol edges across 54 files in Starlette	
+698	open	2026-11-12	Improve Generated Analysis Report Navigation with a Clear Summary and Index Page	
+699	open	2026-11-12	[Bug] Upload archiver (archive.py) — Ruby .rake tasks and config.ru are never uploaded, so Rails background/admin workflows are invisible to every review	
+700	open	2026-11-12	[Bug] Connected Code misses module-level imports from src/flask/signals.py	
+701	open	2026-11-12	[Bug] AST Chunker (PHP) — Class `method_declaration` nodes are never chunked (`0` method chunks across Slim), forcing mid-method `class_segment` splits and 11-line `namespace` target chunks	
+702	open	2026-11-12	[Bug] archive.extract_safe() — Redundant ZIP path separators bypass duplicate detection and cause FileExistsError	
+703	open	2026-11-12	[Bug] Business Workflow Map — "What it produces" panel prints the object a workflow acts on (often its input), and the real outcome is never rendered	
+704	open	2026-11-12	[Bug] Connected Code Map / TypeScript Linker — Package subpath imports ("zod/v4/core") bypass package.json exports and inject benchmark/fuzzing reverse-edges into core library context bundles	
+705	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1] [Bug] Python linker maps external Starlette Response imports to FastAPI's OpenAPI Response model	
+706	open	2026-11-12	[Bug] Node.js CommonJS resolver — parent-relative require("../…") paths are marked unresolved	
+707	open	2026-11-12	Connected Code Map creates false import edges through stem_fallback	
+708	open	2026-11-12	[Bug] CLI recovery guidance — printed resume command drops the requested --output destination	
+709	open	2026-11-12	[Bug] Complete Repository Context (selections.jsonl) — Optimal and Wider scopes freeze unlinked selected-file sections, omitting base classes and up to 48% of primary code	
+710	open	2026-11-12	[Bug] Go AST Resolver does not resolve promoted methods from embedded structs	
+711	open	2026-11-12	[Bug] Connected Code Map — selecting a search result clears the active file filter	
+712	open	2026-11-12	[Bug] HTML Report Generator — Missing minus operators in CSS calc() rules invalidate #report-frame height and .uvc-help-panel width	
+713	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1] [Bug] AST Parsing Failure on Python 3.10+ Pattern Matching (match-case) Causes Premature Review Termination Without Partial Export	
+714	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1] [Bug] AST Parsing Failure on Python 3.10+ Pattern Matching (match-case) Causes Premature Review Termination Without Partial Export	
+715	open	2026-11-12	[Bug] Business Workflow Map — Implementation references list redundant class spans, omit node methods (prep/exec), and appear out of execution order	
+716	open	2026-11-12	[Bug] Go method values — typed callback references lose method-definition links and focused context	
+717	open	2026-11-12	[Bug] Connected Code Map - explicit import of module-level _base64_alphabet is marked unresolved	
+718	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1] [Bug] Python linker stops at package __init__.py on aliased barrel re-exports (from .submod import fn as alias), severing call edges in Connected Code Map and Business Workflow Map	
+719	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1][Bug] Unhandled fallback on pure utility repositories (e.g., requests) resulting in permanent PARTIAL state.	
+720	open	2026-11-12	[Bug] Review gate — a Java-only repository is uploaded in full and then refused, while the same repository plus one unrelated .py file produces both language-independent artifacts	
+721	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1][Bug]  ES6 namespace imports fail to resolve, dropping frontend-to-API dependency edges	
+722	open	2026-11-12	univibecode_workflow	
+723	open	2026-11-12	[Bug] archive.source_files() fails to exclude custom --output directories, re-ingesting previous analysis outputs (2.67 MB / 835K+ phantom tokens) as source code	
+724	open	2026-11-12	[Bug] CLI polling — continuous pagination bypasses the elapsed-time guard	
+725	open	2026-11-12	[Bug] archive.py — source_files() fails to exclude Rust and Maven 'target/' build directories, ingesting compiler caches and causing review aborts	
+726	open	2026-11-12	[Bug] html-report/workflows — Workflow Area badge count mismatch when rendering single-workflow areas on Python codebases	
+727	open	2026-11-12	[Bug] JavaScript/TypeScript resolver — internal JSON module imports are silently dropped because .json files are excluded from workspace scanning	
+728	open	2026-11-12	[Bug] Source archive — unreadable source directories are silently omitted from uploads	
+729	open	2026-11-12	[Challenge 2026][Cohort 3][Track 1] [Bug] CLI recovery handler — unconditional resume advice creates self-referential error loops on terminal failures	
+730	open	2026-11-12	[Bug] Upload archiver (archive.py) — a small project is refused as "too big" because .env/ and .mypy_cache/ are counted, even though the engine ignores those folders	
+731	open	2026-11-12	[Bug] Python Linker — Submodule imports via 'from <pkg> import <submodule>' and explicit '__init__.py' re-exports fail symbol resolution, severing cross-module edges	
+732	open	2026-11-12	[Bug] archive.source_files() — `.env` virtualenv directory silently ingested as source code	
+733	open	2026-11-12	[Bug] Business Risk Findings — silently absent from a COMPLETE review with no user-facing disclosure (risk_findings: DISABLED_BY_SERVER_POLICY)	
+734	open	2026-11-12	[Bug] Flawed k-hop BFS traversal, duplicate vertex mutations, and label state collision in Connected Code Map (connected-code.html)	
+735	open	2026-11-12	[Bug] Python Linker / Connected Code Map — Global symbol index overwrites subpackage symbols across monorepo roots, cross-wiring active imports and selections.jsonl to legacy files	
+736	open	2026-11-13	[Bug] Business Workflow Map — Config workflow omits Config.from_object() although its own title promises object-based loading	
+737	open	2026-11-13	[Bug] Ruby require_relative fails to resolve valid nested file dependencies	
+738	open	2026-11-13	[Bug] Business Workflow Map — Dual-protocol exception workflow omits WebSocket handler (ExceptionMiddleware.websocket_exception) despite explicit title and summary promise	
+739	open	2026-11-13	[Bug] Python AST & Linker — Module-level functional type factories (NewType, namedtuple, functional Enum & TypedDict) are dropped from symbol index, severing cross-file symbol edges	
+740	open	2026-11-13	[Bug] CLI local_text() — Greedy placeholder regex r'@@RESULTS@@([^\n]*)' corrupts multiple paths and appends trailing prose/markdown delimiters on Windows/Linux	
+741	open	2026-11-13	[Bug] Business Workflow Map — property references such as Response.content are rendered as callable methods	
+742	open	2026-11-13	Connected Code Map — import resolver creates self-referential (self-loop) edges when a local filename stem collides with a stdlib/third-party module name	
+743	open	2026-11-13	[Bug] archive.py : Source archive silently excludes legitimate source files containing `token` or `secret` in their filenames	
+744	open	2026-11-13	[Bug] API client - HTTP 200 non-JSON response (proxy/captive-portal page) surfaces as raw "Expecting value: line 1 column 1 (char 0)"	
+745	open	2026-11-13	[Bug] Business Workflow Map incorrectly attributes synchronous `httpx.request()` to the AsyncClient workflow	
+746	open	2026-11-13	[Bug] Source upload — two files whose names differ only by letter case (e.g. libxt_DSCP.c / libxt_dscp.c) make the service reject the whole repository as "Invalid source archive"; --dry-run passes and no file is named	
+747	open	2026-11-13	Track 1:-Connected Code Map — Improve Code Traceability Across Multiple HTML, CSS and JavaScript Files	
+748	open	2026-11-13	[Bug] CLI Presentation — Interleaved stream events desynchronize CustomerDashboardRenderer relative cursor, erasing interim report announcements and orphaning duplicate dashboard headers	
+749	open	2026-11-13	[Bug] Context Selection Engine — 2,500-token envelope padding triggers premature chunk eviction on primary files under budget (Flask app.py loses 144 lines of core request/response logic)	
+750	open	2026-11-13	[Bug] Business Workflow Map — Dynamic Flask Blueprint prefix routing resolves to root instead of registered prefix	
+751	closed	2026-11-13	[Bug] Python Linker / Symbol Resolution — Relative package imports (from . import Symbol) falsely rejected with module_scope_mismatch, severing intra-package dependency edges	
+752	open	2026-11-13	[Bug] presentation.py — Unconditional 10-second silent delay on non-interactive / redirected terminals	
+753	closed	2026-11-13	[Bug] Python Symbol Resolution — Test helper definitions pollute package candidate discovery, triggering false ambiguous_symbol drops on package submodules	
+754	open	2026-11-13	[Bug] Source archiver silently excludes Podman's default Containerfile from repository packages	
+755	closed	2026-11-13	[Bug] Fast Lane Context Selection Engine — Scope 0 (Narrow / Radius 0) systematically omits all dependency neighbors from connected_files_not_included	
+756	open	2026-11-13	[Bug] archive.extract_safe() — Preflight validation does not reject file/ancestor path conflicts, causing unhandled extraction exceptions and incomplete output	
+757	open	2026-11-13	[Challenge 2026][Cohort 3][Track 1] [Bug] Upload archiver (archive.py) - Windows directory junctions are followed, so files outside the selected repository are listed by --dry-run and packed into the upload ZIP	
+758	open	2026-11-13	False imports_symbol connections from Flask production modules to tests/conftest.py	
+759	open	2026-11-13	[Bug] Review status — a Business Workflow scan that lost a Pass 1 request (16/17, logged PARTIAL by the engine) is published as COMPLETE in analysis-status.json, the CLI summary and the HTML report	
+760	open	2026-11-13	CustomerDashboardRenderer undercounts terminal rows for wide Unicode characters	
+761	open	2026-11-13	[BUG] App crashes on invalid / unsupported file type upload	
+762	open	2026-11-13	[UX] New developers don't trust changes - Need Diff + Undo + Simple Errors	

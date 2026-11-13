@@ -1,0 +1,12 @@
+Collecting unvibecode
+  Downloading unvibecode-0.4.0-py3-none-any.whl.metadata (3.0 kB)
+Downloading unvibecode-0.4.0-py3-none-any.whl (10 kB)
+Installing collected packages: unvibecode
+Successfully installed unvibecode-0.4.0
+
+[notice] A new release of pip is available: 26.2.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+
+real	0m5.080s
+user	0m0.399s
+sys	0m0.046s

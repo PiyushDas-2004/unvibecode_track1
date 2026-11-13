@@ -1,0 +1,5 @@
+{'status': 'ok', 'service': 'unvibecode-engine', 'busy': False, 'presentation_version': 1, 'analysis_slots': 2}
+
+real	0m1.092s
+user	0m0.070s
+sys	0m0.009s

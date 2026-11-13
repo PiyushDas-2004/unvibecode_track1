@@ -1,0 +1,16 @@
+ff5082a Fix dict being used as a set
+    UnvibeCode · 3 business workflow(s): card payment authorization and capture via Auth…; card payment authorization and settlement; gateway-specific checkout callback handling · 5 direct importer(s) · map current
+3f3001d [pre-commit.ci] pre-commit autoupdate
+    UnvibeCode · no mapped business workflow · 0 direct importer(s) · map current
+49c4bb3 Fix ruff ICN001 datetime alias
+    UnvibeCode · 1 business workflow(s): gateway-specific checkout callback handling · 0 direct importer(s) · map may be stale
+f0e1f2c [pre-commit.ci] auto fixes from pre-commit.com hooks
+    UnvibeCode · 1 business workflow(s): gateway-specific checkout callback handling · 0 direct importer(s) · map current
+529d6a5 stripe: support stripe>=15 (#501)
+    UnvibeCode · 1 business workflow(s): provider-backed payment checkout and callback h… · 1 direct importer(s) · map may be stale
+2105d02 Update changelog for Stripe bump
+    UnvibeCode · no mapped business workflow · 0 direct importer(s) · map current
+d1eea51 Add more type hints to stripe logic
+    UnvibeCode · 1 business workflow(s): provider-backed payment checkout and callback h… · 1 direct importer(s) · map may be stale
+47449a1 Add tests for stripe conversion
+    UnvibeCode · no mapped business workflow · 0 direct importer(s) · map may be stale

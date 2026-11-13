@@ -1,0 +1,49 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m unvibecode review --repository C:\Users\piyus\unvibecode-trial\repos\spring-petclinic --output C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050 --no-open-browser
+UNVIBECODE REPOSITORY REVIEW
+Repository: C:\Users\piyus\unvibecode-trial\repos\spring-petclinic
+Approximate codebase size: 96,305 tokens across 13 source files
+
+● Code understanding
+  Creating the interactive code map
+
+● Business analysis
+  Preparing repository context
+
+Interim results available here:
+C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050\spring-petclinic-unvibecode-analysis-20261113_164057\spring-petclinic-unvibecode-interim.html
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050\spring-petclinic-unvibecode-analysis-20261113_164057\spring-petclinic-unvibecode-interim.html
+
+● Business analysis
+  Preparing repository context
+
+Business workflow review skipped: No usable supported application connections; detected: css, html, java No hosted workflow analysis was started.
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results:
+  C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050\spring-petclinic-unvibecode-analysis-20261113_164057\spring-petclinic-unvibecode-interim.html
+
+● Business analysis
+  Business workflow analysis not available for this source mix
+  No usable supported application connections; detected: css, html, java No hosted workflow analysis was started.
+
+UNVIBECODE REVIEW PARTIAL · 2s
+Repository: C:\Users\piyus\unvibecode-trial\repos\spring-petclinic
+Codebase: ~96,305 tokens · 13 source files
+
+Review Results:
+✓ Connected Code Map — Structured graph of your codebase linking different files and symbols.
+✓ Complete Repository Context — Download the complete normalized repository ZIP for LLM or API analysis.
+
+Partial results available here:
+C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050\spring-petclinic-unvibecode-analysis-20261113_164057\spring-petclinic-unvibecode-full.html
+
+Available results were preserved. One or more review outputs could not be completed. Technical details: C:\Users\piyus\unvibecode-trial\results\spring-petclinic_20261113_1794588050\spring-petclinic-unvibecode-analysis-20261113_164057\technical-logs
+
+[exit 1, wall 5.9 s]

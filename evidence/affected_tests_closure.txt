@@ -1,0 +1,2 @@
+# Transitive-closure test (affected-tests idea), Flask 49943b5a, from evidence/raw_outputs/flask/connections.jsonl
+src/flask/app.py: 74 transitive dependents; src/flask/helpers.py: 74; src/flask/sansio/scaffold.py: 74 (closure saturates: every hub reaches the same 74 files)

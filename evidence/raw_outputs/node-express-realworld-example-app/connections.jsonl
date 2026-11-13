@@ -1,0 +1,2 @@
+{"source_chunk":"chunk_6b58aa92e3ce2e7d","source_file":"src/app/routes/auth/auth.controller.ts","source_line":1,"relationship":"file_import","symbol":null,"target_chunk":"chunk_24215ddc52e1965b","target_file":"src/app/routes/auth/auth.ts","target_line":1,"confidence":"high"}
+{"source_chunk":"chunk_fa2d0eecbaa1723c","source_file":"src/main.ts","source_line":1,"relationship":"file_import","symbol":null,"target_chunk":"chunk_86f14bb298c07ea2","target_file":"src/app/routes/routes.ts","target_line":1,"confidence":"high"}

@@ -1,0 +1,53 @@
+# started_utc: 2026-11-13T14:15:48.008326+00:00
+# command: python -m unvibecode review --repository /home/user/targets/spring-petclinic --output /home/user/runs/spring-petclinic_run1 --no-open-browser
+UNVIBECODE REPOSITORY REVIEW
+Repository: /home/user/targets/spring-petclinic
+Approximate codebase size: 93,159 tokens across 13 source files
+
+● Code understanding
+  Complete repository context is ready
+  61 of 63 files prepared
+
+● Business analysis
+  Preparing repository context
+
+Interim results available here:
+/home/user/runs/spring-petclinic_run1/spring-petclinic-unvibecode-analysis-20261113_141549/spring-petclinic-unvibecode-interim.html
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  /home/user/runs/spring-petclinic_run1/spring-petclinic-unvibecode-analysis-20261113_141549/spring-petclinic-unvibecode-interim.html
+
+● Business analysis
+  Preparing repository context
+
+Business workflow review skipped: No usable supported application connections; detected: css, html, java No hosted workflow analysis was started.
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results:
+  /home/user/runs/spring-petclinic_run1/spring-petclinic-unvibecode-analysis-20261113_141549/spring-petclinic-unvibecode-interim.html
+
+● Business analysis
+  Business workflow analysis not available for this source mix
+  No usable supported application connections; detected: css, html, java No hosted workflow analysis was started.
+
+UNVIBECODE REVIEW PARTIAL · 3s
+Repository: /home/user/targets/spring-petclinic
+Codebase: ~93,159 tokens · 13 source files
+
+Review Results:
+✓ Connected Code Map — Structured graph of your codebase linking different files and symbols.
+✓ Complete Repository Context — Download the complete normalized repository ZIP for LLM or API analysis.
+
+Partial results available here:
+/home/user/runs/spring-petclinic_run1/spring-petclinic-unvibecode-analysis-20261113_141549/spring-petclinic-unvibecode-full.html
+
+Available results were preserved. One or more review outputs could not be completed. Technical details: /home/user/runs/spring-petclinic_run1/spring-petclinic-unvibecode-analysis-20261113_141549/technical-logs
+
+# exit_code: 1
+# wall_seconds: 10.7
+# peak_child_rss_kb: 28884

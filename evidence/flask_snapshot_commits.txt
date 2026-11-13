@@ -1,0 +1,6 @@
+# Flask snapshots used for cross-commit comparisons (repo: https://github.com/pallets/flask)
+head=49943b5a94413a530761350f04e896f76e8d620e
+pre_query=3596b1ab61cea85edb8970e83ff61daa073facf8
+d73fa1c=d73fa1cdcbd8b1465c151db8924ba58b1dd14e35
+c2705ff_parent=330123258e8c3dc391cbe55ab1ed94891ca83af3
+c2705ff=c2705ffd9ce1dc8476cb29eaf5ff5d4c719852d9

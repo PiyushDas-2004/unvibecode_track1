@@ -1,0 +1,60 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m pip install --upgrade C:\Users\piyus\Downloads\unvibecode\prototype
+Processing .\prototype
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: unvibecode-mapfile
+  Building wheel for unvibecode-mapfile (pyproject.toml): started
+  Building wheel for unvibecode-mapfile (pyproject.toml): finished with status 'done'
+  Created wheel for unvibecode-mapfile: filename=unvibecode_mapfile-0.1.0-py3-none-any.whl size=18697 sha256=df9edf0301fa0efd786f2f71af5c6b296a66364c0a72a78a512184c35eb33bc2
+  Stored in directory: C:\Users\piyus\AppData\Local\Temp\pip-ephem-wheel-cache-_d0boqjw\wheels\fa\68\36\e88f4831d648988c5347e34cfcd5c293283a907e6440b97111
+Successfully built unvibecode-mapfile
+Installing collected packages: unvibecode-mapfile
+Successfully installed unvibecode-mapfile-0.1.0
+  C:\Users\piyus\AppData\Local\Temp\pip-build-env-s4vpojsy\overlay\Lib\site-packages\setuptools\config\_apply_pyprojecttoml.py:82: BuildBackendWarning: `project.license` as a TOML table is deprecated
+  !!
+  
+          ********************************************************************************
+          Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+  
+          By 2027-Feb-18, you need to update your project and remove deprecated calls
+          or your builds will no longer be supported.
+  
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+  
+  !!
+    corresp(dist, value, root_dir)
+  C:\Users\piyus\AppData\Local\Temp\pip-build-env-s4vpojsy\overlay\Lib\site-packages\setuptools\config\_apply_pyprojecttoml.py:82: BuildBackendWarning: `project.license` as a TOML table is deprecated
+  !!
+  
+          ********************************************************************************
+          Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+  
+          By 2027-Feb-18, you need to update your project and remove deprecated calls
+          or your builds will no longer be supported.
+  
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+  
+  !!
+    corresp(dist, value, root_dir)
+  C:\Users\piyus\AppData\Local\Temp\pip-build-env-s4vpojsy\overlay\Lib\site-packages\setuptools\config\_apply_pyprojecttoml.py:82: BuildBackendWarning: `project.license` as a TOML table is deprecated
+  !!
+  
+          ********************************************************************************
+          Please use a simple string containing a SPDX expression for `project.license`. You can also use `project.license-files`. (Both options available on setuptools>=77.0.0).
+  
+          By 2027-Feb-18, you need to update your project and remove deprecated calls
+          or your builds will no longer be supported.
+  
+          See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+          ********************************************************************************
+  
+  !!
+    corresp(dist, value, root_dir)
+
+[exit 0, wall 13.3 s]

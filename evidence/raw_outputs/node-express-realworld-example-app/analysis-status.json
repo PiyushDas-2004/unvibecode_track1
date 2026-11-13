@@ -1,0 +1,80 @@
+{
+  "schema_version": "shipreadyv2.customer_analysis_status.v10",
+  "runner_version": "shipreadyv2.customer_mvp.v10",
+  "updated_at": "2026-11-13T14:15:40.810982+00:00",
+  "analysis_directory": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/unvibecode_results/node-express-realworld-example-app-unvibecode-analysis-20261113_141535",
+  "repository": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/input/node-express-realworld-example-app",
+  "engine_root": "/tmp/unvibecode-engine-l2u_ny37/engine",
+  "repository_estimate": {
+    "method": "supported_source_bytes_divided_by_3.2",
+    "source_files": 38,
+    "source_bytes": 53701,
+    "approximate_tokens": 16782,
+    "unreadable_files": []
+  },
+  "large_repository_policy": {
+    "limit_tokens": 2000000,
+    "is_large_repository": false,
+    "decision": "CONNECTED_CODE_MAP_AND_BUSINESS_REVIEW"
+  },
+  "overall_status": "PARTIAL",
+  "lanes": {
+    "FAST_LANE": {
+      "status": "COMPLETED",
+      "message": "Codebase map and connected code downloads are ready",
+      "customer_reason": null,
+      "started_at": "2026-11-13T14:15:37.534988+00:00",
+      "completed_at": "2026-11-13T14:15:37.535008+00:00",
+      "duration_seconds": 1.516,
+      "run_folder": "/tmp/uvc-o5lvu8ek/c/run",
+      "artifacts": {
+        "resolved_graph": "/tmp/uvc-o5lvu8ek/c/run/shipreadyv2_resolved_graph.json",
+        "repository_profile": "/tmp/uvc-o5lvu8ek/c/run/fast_lane_repository_profile.json",
+        "interactive_graph": "/tmp/uvc-o5lvu8ek/c/run/fast_lane_symbol_resolution_graph.html",
+        "browser_context_store": "/tmp/uvc-o5lvu8ek/c/run/fast_lane_context_store.js",
+        "api_context_store": "/tmp/uvc-o5lvu8ek/c/run/fast_lane_context_store.json",
+        "complete_repository_context": "/tmp/uvc-o5lvu8ek/c/run/shipready_complete_repository_context.zip",
+        "timing": "/tmp/uvc-o5lvu8ek/c/run/fast_lane_timing.json"
+      },
+      "components": {
+        "connected_code_map": "COMPLETED",
+        "repository_context": "COMPLETED"
+      },
+      "error": null
+    },
+    "FULL_ANALYSIS": {
+      "status": "FAILED",
+      "message": "Business Workflow & Risk Review stopped during STEP_03",
+      "customer_reason": "The hosted analysis service has exhausted its API credits. Available results were preserved; retry after service credits are restored.",
+      "started_at": "2026-11-13T14:15:40.732937+00:00",
+      "completed_at": "2026-11-13T14:15:40.732952+00:00",
+      "duration_seconds": 4.714,
+      "active_stage": "STEP_03",
+      "completed_stages": [
+        "STEP_01",
+        "STEP_02"
+      ],
+      "run_folder": "/tmp/uvc-o5lvu8ek/b/run",
+      "artifacts": {
+        "report_folder": "/tmp/uvc-o5lvu8ek/b/run"
+      },
+      "components": {
+        "business_workflows": "UNAVAILABLE",
+        "risk_findings": "UNAVAILABLE"
+      },
+      "review_outcome": "UNAVAILABLE",
+      "selection_summary": null,
+      "error": {
+        "error_type": "CustomerRunError",
+        "message": "Step 03 produced no usable results: completion=FAILED, successful=0, failed=1; last request error=RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "traceback": "Traceback (most recent call last):\n  File \"/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py\", line 1769, in run_full_analysis_worker\n    require_step_three_results(report_folder)\n  File \"/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py\", line 1175, in require_step_three_results\n    raise CustomerRunError(f\"Step 03 produced no usable results: {suffix}\")\nshipreadyv2.customer_runner.CustomerRunError: Step 03 produced no usable results: completion=FAILED, successful=0, failed=1; last request error=RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}\n"
+      }
+    }
+  },
+  "customer_results": {
+    "complete_repository_context": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/unvibecode_results/node-express-realworld-example-app-unvibecode-analysis-20261113_141535/node-express-realworld-example-app-repository-context.zip",
+    "connected_code_map": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/unvibecode_results/node-express-realworld-example-app-unvibecode-analysis-20261113_141535/report-support/connected-code.html",
+    "interim_results_page": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/unvibecode_results/node-express-realworld-example-app-unvibecode-analysis-20261113_141535/node-express-realworld-example-app-unvibecode-interim.html",
+    "results_landing_page": "/opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/unvibecode_results/node-express-realworld-example-app-unvibecode-analysis-20261113_141535/node-express-realworld-example-app-unvibecode-full.html"
+  }
+}

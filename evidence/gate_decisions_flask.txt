@@ -1,0 +1,26 @@
+# Upload-gate decision on the last 25 non-merge pallets/flask commits touching src/ (from HEAD 49943b5a). SKIP = no import-like line changed in a source file, so check would not upload.
+bfc8f98 SKIP
+f2ef7a5 UPLOAD
+d086db8 UPLOAD
+329c32b UPLOAD
+7689f98 UPLOAD
+d73fa1c SKIP
+d318b68 SKIP
+2a8a38b SKIP
+8999295 UPLOAD
+7203fea UPLOAD
+de8429f SKIP
+81798b4 SKIP
+8285adf SKIP
+36e4a82 SKIP
+954f568 SKIP
+9368fb3 SKIP
+06ea505 UPLOAD
+a29f88c SKIP
+fbb6f0b UPLOAD
+7b00886 SKIP
+a411a24 SKIP
+c17f379 UPLOAD
+e82db2c UPLOAD
+c77a520 UPLOAD
+3709c4a SKIP

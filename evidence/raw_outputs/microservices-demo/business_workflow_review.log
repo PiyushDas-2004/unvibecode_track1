@@ -1,0 +1,93 @@
+Scanning workspace: /opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/input/microservices-demo
+Parsing source files: 74
+[STAGE 1 COMPLETE] 74 files, 76 internal file edges, 0 package-level edges, 344 unresolved/external imports, 72 symbol edges, 36 unresolved Go usages
+
+[SHIPREADYV2 LINKER RESOLUTION COMPLETE]
+Output: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_resolved_graph.json
+Files indexed: 74
+Imports: 4 resolved, 0 package-level, 0 partial, 344 unresolved, 0 hard-path skipped, 0 uncertain
+Python enrichment: 13 files, 0 safe constants, 0 dynamic imports marked
+Symbols: 0/51 resolved; 304 ambiguous names in index
+Symbol edges added: 76
+Go symbol edges promoted: 72; unresolved Go usages: 36
+
+[SHIPREADYV2 LLM FEED COMPLETE]
+Repository: /opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/input/microservices-demo
+Resolved graph: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_resolved_graph.json
+Atomic chunks: 2,103
+Chunk relationships: 2,139
+LLM batches: 59
+Feed: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_llm_feed.jsonl
+Tokenizer: tiktoken:cl100k_base
+
+[SHIPREADYV2 SEMANTIC PACKS COMPLETE]
+Source 12K batches: 59
+Semantic packs: 8
+Semantic token range: 35,000 target-min / 55,000 target / 75,000 hard
+Packing guard: 73,500 content/context base + up to 1,500 bridge tokens
+  semantic_pack_001: 52,692 tokens, 5 source batches, 1 component(s), within-range
+  semantic_pack_002: 52,692 tokens, 5 source batches, 1 component(s), within-range
+  semantic_pack_003: 52,692 tokens, 5 source batches, 1 component(s), within-range
+  semantic_pack_004: 52,692 tokens, 5 source batches, 1 component(s), within-range
+  semantic_pack_005: 37,316 tokens, 4 source batches, 2 component(s), within-range
+  semantic_pack_006: 37,316 tokens, 4 source batches, 2 component(s), within-range
+  semantic_pack_007: 61,528 tokens, 11 source batches, 11 component(s), within-range
+  semantic_pack_008: 71,892 tokens, 20 source batches, 20 component(s), within-range
+Semantic feed: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 UNIFIED PIPELINE COMPLETE]
+Target folder: /opt/unvibecode-engine/api-jobs/public-preview/<JOB_ID_REDACTED>/input/microservices-demo
+Run folder:    /tmp/uvc-kw84vjr7/b/run
+Resolved JSON: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_resolved_graph.json
+LLM feed:      /tmp/uvc-kw84vjr7/b/run/shipreadyv2_llm_feed.jsonl
+Semantic feed: /tmp/uvc-kw84vjr7/b/run/shipreadyv2_semantic_packs.jsonl
+
+[SHIPREADYV2 PASS 1 INPUT PREPARATION COMPLETE]
+Semantic input:  /tmp/uvc-kw84vjr7/b/run/shipreadyv2_semantic_packs.jsonl
+Compact taxonomy:/tmp/unvibecode-engine-3lym_g8o/engine/archetype_taxonomy_pass1_compact.yaml
+Output JSONL:    /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Tokenizer:       tiktoken:cl100k_base
+Shared context:  9,600 tokens
+Taxonomy routing: 7,902 LLM classification tokens; 9,174 deterministic-only tokens
+Semantic packs:  8
+LLM requests:    19
+Request tokens: min=38,390, avg=49,990, max=68,975
+Requests per semantic pack:
+  semantic_pack_001: 2
+  semantic_pack_002: 2
+  semantic_pack_003: 2
+  semantic_pack_004: 2
+  semantic_pack_005: 3
+  semantic_pack_006: 3
+  semantic_pack_007: 2
+  semantic_pack_008: 3
+Next: run exactly two pass1_semantic_request records for quality review.
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN]
+Input:      /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_llm_inputs.jsonl
+Environment:/tmp/unvibecode-engine-3lym_g8o/engine/.env
+Runner:     full-v3-parallel-partial-20260717
+Model:      gpt-5.4-mini
+Reasoning:  low
+Risk triggers: NOT supplied to the LLM; deterministic stage only
+Validated 19 prepared requests; selected=19; reused=0; pending=19
+Running 19 pending Pass 1 request(s) with concurrency=2; each request gets one initial attempt and at most one validation correction.
+[1/19] START semantic_pack_001_part_01 | attempt=1/2, input=64,602, reasoning=low, max_output=32,000
+[2/19] START semantic_pack_001_part_02 | attempt=1/2, input=44,771, reasoning=low, max_output=32,000
+[1/19] FAILED semantic_pack_001_part_01 on attempt 1; other requests continue.
+[2/19] FAILED semantic_pack_001_part_02 on attempt 1; other requests continue.
+
+[SHIPREADYV2 PASS 1 FULL REPOSITORY RUN COMPLETE]
+Completion: FAILED
+Successful: 0/19
+Results:    /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_full_results.jsonl
+Trace:      /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_full_trace.jsonl
+Artifacts:  /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_full_artifacts
+Errors:     /tmp/uvc-kw84vjr7/b/run/shipreadyv2_pass1_full_errors.jsonl
+
+Traceback (most recent call last):
+  File "/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py", line 1769, in run_full_analysis_worker
+    require_step_three_results(report_folder)
+  File "/opt/unvibecode-engine/unvibecode-product-private-main/src/shipreadyv2/customer_runner.py", line 1175, in require_step_three_results
+    raise CustomerRunError(f"Step 03 produced no usable results: {suffix}")
+shipreadyv2.customer_runner.CustomerRunError: Step 03 produced no usable results: completion=FAILED, successful=0, failed=19; last request error=RateLimitError: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}
+

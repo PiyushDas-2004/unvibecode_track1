@@ -1,0 +1,77 @@
+# started_utc: 2026-11-13T14:18:04.484797+00:00
+# command: python -m unvibecode review --repository /home/user/targets/flask_d73fa1c --output /home/user/runs/flask_d73fa1c_run --no-open-browser
+UNVIBECODE REPOSITORY REVIEW
+Repository: /home/user/targets/flask_d73fa1c
+Approximate codebase size: 188,008 tokens across 105 source files
+
+● Code understanding
+  Reading and connecting source files
+  70 of 105 source files processed
+
+● Business analysis
+  Preparing repository context
+
+● Code understanding
+  Reading and connecting source files
+
+● Business analysis
+  Preparing repository context
+
+● Code understanding
+  Creating the interactive code map
+
+● Business analysis
+  Preparing repository context
+
+Interim results available here:
+/home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/flask_d73fa1c-unvibecode-interim.html
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  /home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/flask_d73fa1c-unvibecode-interim.html
+
+● Business analysis
+  Preparing repository context
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results ready; business analysis continues:
+  /home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/flask_d73fa1c-unvibecode-interim.html
+
+● Business analysis
+  Understanding business workflows
+  0 of 8 code areas reviewed
+
+Business analysis needs attention.
+Reason: The hosted analysis service has exhausted its API credits. Available results were preserved; retry after service credits are restored.
+Technical details: /home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/technical-logs/business_workflow_review.log
+
+✓ Code understanding
+  Ready
+  Connected Code Map + Repository Context
+  Interim results:
+  /home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/flask_d73fa1c-unvibecode-interim.html
+
+! Business analysis
+  Needs attention
+  The hosted analysis service has exhausted its API credits. Available results were preserved; retry after service credits are restored.
+
+UNVIBECODE REVIEW PARTIAL · 14s
+Repository: /home/user/targets/flask_d73fa1c
+Codebase: ~188,008 tokens · 105 source files
+
+Review Results:
+✓ Connected Code Map — Structured graph of your codebase linking different files and symbols.
+✓ Complete Repository Context — Download the complete normalized repository ZIP for LLM or API analysis.
+
+Partial results available here:
+/home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/flask_d73fa1c-unvibecode-full.html
+
+Available results were preserved. One or more review outputs could not be completed. Technical details: /home/user/runs/flask_d73fa1c_run/flask_d73fa1c-unvibecode-analysis-20261113_141806/technical-logs
+
+# exit_code: 1
+# wall_seconds: 21.2
+# peak_child_rss_kb: 29504

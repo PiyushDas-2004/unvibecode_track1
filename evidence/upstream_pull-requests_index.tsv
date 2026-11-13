@@ -1,0 +1,111 @@
+number	state	created	title	labels
+3	closed	2026-08-10	Fix README badges, encoding, and quality workflow placement	
+4	closed	2026-08-10	Move demo GIF to the top of the README	
+5	closed	2026-08-10	Organize repository files so the README demo appears sooner	
+6	closed	2026-08-10	Align workflow-pack terminology for first-time contributors	
+9	open	2026-08-12	[Challenge 2026][Improvement]: link README install section to TROUBLESHOOTING.md	
+10	closed	2026-08-12	Add engineering pre-build question series	
+11	closed	2026-08-12	Rename and uncollapse AI Engineering Cheatsheet root	
+12	closed	2026-08-12	Add AI architecture principles and production anti-patterns	
+13	closed	2026-08-12	Add 40 AI and LLM production trade-offs	
+14	open	2026-08-12	[Challenge 2026][Track C] Add specific host allowlist guidance to TROUBLESHOOTING.md	
+15	closed	2026-08-12	[Challenge 2026][Track B] Clarify capacity/refund independence in cancellation recovery	
+18	open	2026-08-12	[Challenge 2026][Improvement] Add agentic code analysis and automated remediation workflow pack	
+20	open	2026-08-13	[Challenge 2026][Improvement] Validate required core scenario content	good first issue
+21	open	2026-08-13	Add AI Engineering Cheatsheet contribution standards	
+22	closed	2026-08-13	[Improvement] Add Windows CMD activation instructions	
+23	open	2026-08-13	feat(workflow-pack): add Agentic Tool Execution and Permission Bounda…	New workflow
+26	open	2026-08-13	Fix README install command to match project docs	
+28	open	2026-08-13	docs: clarify shipready_results is UnvibeCode's expected report folder name	
+30	open	2026-08-13	fix: replace legacy ShipReady output naming	
+32	open	2026-08-14	Add generated artifact context hygiene guidance	
+34	open	2026-08-14	Enforce that workflow-pack folder names carry no numeric prefix	
+35	open	2026-08-14	[Improvement] Validate core scenario outcomes	
+38	open	2026-08-14	[Improvement] Add concrete API test example for payment idempotency scenario	
+40	open	2026-08-14	[Improvement] Enforce non-empty Must Not Happen column in core scenarios	
+43	open	2026-08-14	[Improvement] Add payment timeout test example	
+45	open	2026-08-14	[Improvement] Document tiktoken blob 403 troubleshooting	bug
+48	open	2026-08-14	[Improvement] Document blocked cl100k_base encoding download in TROUBLESHOOTING	
+49	open	2026-08-14	[Improvement] Validate testing guide scenario synchronization	
+54	open	2026-08-14	[Improvement] Clarify review coverage for evidence-based conclusions	
+58	open	2026-08-14	[Improvement] Improve hosted analysis troubleshooting guidance	
+59	closed	2026-08-14	docs: add contributor checklist for documentation changes	
+67	closed	2026-08-14	[Improvement] Add OAuth authorization and account linking workflow pack	
+70	closed	2026-08-15	[Improvement] Add Required Skills to Business Risk reviews (#69)	
+75	closed	2026-08-15	[Improvement] Add AI Agent Tool Execution and Side-Effect Control workflow pack	
+79	closed	2026-08-15	Add quick guide selection section to AI Engineering Cheatsheet	documentation
+80	closed	2026-08-15	[Improvement] Add API credential lifecycle workflow pack	
+82	closed	2026-08-15	[Improvement] Add authentication recovery workflow pack	
+83	closed	2026-08-15	Add Authentication, Session Management, and Account Recovery Workflow	
+88	closed	2026-08-15	[Improvement] Add agent tool calling and task execution workflow	
+94	closed	2026-08-16	[Challenge 2026][Improvement] Document Windows crash workarounds for issue #53 (encoding + path length)	
+96	closed	2026-08-16	[Improvement] Add inbound webhook processing workflow pack	
+99	closed	2026-08-16	[Challenge 2026][Improvement] Add installation verification step to Quick Start	
+100	closed	2026-08-16	Add Vibecoding to Verified Engineering guide	
+101	closed	2026-08-16	[Improvement] Add idempotent request processing and concurrency control	
+102	closed	2026-08-16	[Improvement] Add password-reset-and-account-recovery workflow pack	
+104	closed	2026-08-17	test(ast): add reproduction directory and regression test case for upward relative imports (#103)	
+112	closed	2026-08-17	Improve AI engineering cheatsheet README	
+117	closed	2026-08-18	[Improvement] Validate required workflow-pack headings in quality tests	
+119	closed	2026-08-18	[Improvement] Add shopping-cart-management-and-abandonment workflow packAdd shopping cart workflow pack	
+120	closed	2026-08-18	Add Payment Dispute and Chargeback Resolution workflow pack	
+122	closed	2026-08-18	[Improvement] Add user registration, email verification, and account activation workflow pack	
+126	closed	2026-08-18	[Improvement] Add LLM Integrations guide to Cheatsheet	
+128	closed	2026-08-18	fix : normalize UNSUPPORTED confidence before business path validation	
+130	closed	2026-08-19	Update challenge submissions and rewards	
+140	closed	2026-08-20	   [Challenge 2026][Improvement] Add troubleshooting note for truncated chunk ID in ResultValidationError	
+152	closed	2026-08-26	fix: fail quality tests loud when workflow pack directory is empty	
+160	closed	2026-09-03	Add UnvibeCode contributor and Top 10 credentials	
+161	closed	2026-09-03	Add Top 10 UnvibeCode challenge credentials	
+162	closed	2026-09-07	...	
+163	closed	2026-09-09	Expand Hariom contributor credential	
+164	closed	2026-09-09	Add Top 10 challenge graphic and expand all Top 10 credentials	
+165	closed	2026-09-09	Expand all Top 10 contributor credentials	
+166	closed	2026-09-09	Add Top 30 credential pages	
+167	closed	2026-09-09	Add Top 50 and Top 100 credential pages and verification index	
+168	closed	2026-09-11	Refocus README for discovery, conversion, and AEO	
+169	closed	2026-09-11	Name competitors and remove temporary feedback links	
+170	closed	2026-09-11	Standardize reverse-engineering positioning across README and credentials	
+171	closed	2026-09-16	Clean up Windows, macOS, and Linux installation instructions	
+172	closed	2026-09-17	Move star CTA to top of README	
+173	closed	2026-09-18	Add RAG review skill, practical guide, checklist and runnable example	
+174	closed	2026-09-18	Make the RAG guide research-backed, citation-ready, and easier to discover	
+175	closed	2026-09-20	Align README output order and descriptions with current review results	
+176	closed	2026-09-20	Add UnvibeCode homepage for GitHub Pages	
+177	closed	2026-09-21	Archive GitHub traffic history automatically	
+178	closed	2026-09-21	Add smolagents analysis using original UnvibeCode workflows and site design	
+179	closed	2026-09-21	Refine smolagents Understand page around Understand → Ask → Build	
+180	closed	2026-09-21	Add Ask connected-code experience and organize smolagents page sources	
+181	closed	2026-09-21	Show sample analysis outputs on homepage and unify smolagents output navigation	
+182	closed	2026-09-22	docs(rag-review): add data-protection checks before retrieval and generation	
+183	closed	2026-09-23	Improve homepage sample outputs, FAQ and AI chat links	
+184	closed	2026-09-23	Shorten homepage FAQs and explain UnvibeCode's workflow focus	
+185	closed	2026-09-23	Restore footer, correct sample links and align customer-facing copy	
+186	closed	2026-09-23	Replace old smolagents analysis with complete supplied report set	
+187	closed	2026-09-23	Update How It Works, Outputs and Troubleshooting for current reports	
+188	closed	2026-09-24	Clarify guardrails implementation guide filenames	
+189	closed	2026-09-24	Add practical guardrails notebooks and configuration checker	
+190	closed	2026-09-24	Publish guardrails technical guide and rename preconfigured programs folder	
+195	closed	2026-10-06	docs: add Windows troubleshooting guidance	
+249	closed	2026-10-17	docs: explain how to verify reported workflow guards	
+293	closed	2026-10-28	docs: add Go parsing and connected graph guide	
+301	open	2026-10-29	docs: update results path to unvibecode_results and add .gitignore	
+322	open	2026-10-30	docs: add python fallback to Windows quick start	
+392	open	2026-11-01	Fix Markdown encoding validation for misdecoded punctuation	
+410	open	2026-11-01	guardrails runner: report deeply nested configs as exit 2 instead of crashing (fixes #400)	
+424	open	2026-11-02	fix: improve GitHub traffic archive reliability 	
+508	closed	2026-11-05	test: run shipped RAG and guardrails checks in CI	
+555	open	2026-11-06	fix(parsers/go): resolve collection return types (slice, map, chan) in Go Tree-sitter adapter	
+556	open	2026-11-06	fix(packaging): enable cross-platform import fallback for native extensions on Linux/macOS	
+557	open	2026-11-06	fix(traversal): prevent infinite traversal recursion on NTFS directory junctions and symlinks	
+558	open	2026-11-06	fix(traversal): support .gitignore parsing and pattern exclusion during repository scans	
+559	open	2026-11-06	fix(io): handle PermissionError and OSError gracefully in safe_read_text	
+560	open	2026-11-06	fix(parsers/go): resolve same-package sibling struct definitions and emit internal edges	
+561	open	2026-11-06	fix(parsers/python): resolve all targets in relative multi-imports (from . import a, b)	
+562	open	2026-11-06	fix(compiler): prioritize canonical lifecycle stage over source line in workflow display sorting	
+563	open	2026-11-06	fix(compiler): prevent state transition misattribution in multi-resource workflow groups	
+564	open	2026-11-06	fix(export): publish 00_unvibecode_results.html directly in root results directory	
+565	open	2026-11-06	fix(context): record zero-byte files in skipped_files manifest to reconcile preflight counts	
+566	open	2026-11-06	fix(context): align direct and extended context budget targets to advertised 45K and 75K limits	
+567	open	2026-11-06	fix(docs): add missing container IDs and hash routing for sample report CTA links	
+640	open	2026-11-10	fix(linker): require re-export provenance in LinkerResolutionModule (#489)	

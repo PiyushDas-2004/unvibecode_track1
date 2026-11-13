@@ -1,0 +1,10 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m unvibecode_mapfile impact --repository C:\Users\piyus\unvibecode-trial\repos\django-payments --map C:\Users\piyus\Downloads\unvibecode\evidence\rerun_20261113\django-payments_UNVIBECODE.md
+UnvibeCode business reach: this change touches 1 business workflow(s)
+  provider-backed payment checkout and callback handling [Payment workflows]: changed StripeProviderV3, StripeProviderV3.create_session, StripeProviderV3.get_form in payments/stripe/providers.py
+Code reach: 2 changed file(s); 1 other file(s) import them directly.
+  payments/stripe/providers.py: 1 direct importer(s)
+      changed symbol StripeProviderV3 is used by payments/stripe/__init__.py
+  1 changed file(s) have no recorded importers.
+Import lines changed in payments/stripe/test_stripev3.py: structure may have changed; run `unvibecode-mapfile check`.
+
+[exit 0, wall 0.8 s]

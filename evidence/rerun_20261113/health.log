@@ -1,0 +1,4 @@
+$ C:\Users\piyus\unvibecode-trial\venv\Scripts\python.exe -m unvibecode health
+{'status': 'ok', 'service': 'unvibecode-engine', 'busy': False, 'presentation_version': 1, 'analysis_slots': 2}
+
+[exit 0, wall 0.5 s]
